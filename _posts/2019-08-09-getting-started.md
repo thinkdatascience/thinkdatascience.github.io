@@ -22,6 +22,16 @@ There are two types of multicollinearity:
 
 - Data Multicollinearity: This type of multicollinearity is already present in the dataset rather than we create a situation of multicollinearity. For example, when we compute correlation coefficients, and we come to have correated features. 
 
+## What Problems Do Multicollinearity Cause?
+
+This can cause two types of problems:
+
+- The model coefficients become so sensitive to small changes in the model. Even a small change can change the value drastically.
+
+- It reduces the statstical power of hypothesis testing. We can't rely the p-values to identify the significant features. Basically, it reduces the precision of the estimated coefficients and becomes difficult to specify the correct model.
+
+So, if there is high of degree of multicollinearity, then there would be high problematic effects. It affects only the correlated variables. Other variables remain unaffected and contribute well to the model.
+
 
 
 [Fork **Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork) on GitHub, rename the repository to `USERNAME.github.io` (where `USERNAME` is your GitHub username), and then open terminal and clone the fork to local by:
