@@ -4,7 +4,9 @@ author: Akshay Adlakha & Akshaykumar Rao
 date: 2020-12-14 00:34:00 +0800
 categories: [Blogging, Tutorial]
 tags: [favicon]
-toc: false
+pin: true
+math: true
+mermaid: true
 ---
 
 The errors associated with machine learning models are of two types:
