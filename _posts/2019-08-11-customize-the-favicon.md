@@ -22,8 +22,9 @@ Variance reflects the spreadness. How much the predictions for a given point var
 
 So, it is neccessary to balance between bias and variance. We don't want to have a model with high errors. A balance between bias and variance minimizes the total error of the model. This balance is known as Bias-Variance tradeoff.
 
+![upload-image](/assets/img/sample/Bias1.png)
 
-
+![upload-image](/assets/img/sample/Bias2.png)
 
 
 
