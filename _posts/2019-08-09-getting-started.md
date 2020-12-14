@@ -206,7 +206,6 @@ data.head()
 </table>
 </div>
 <br>
-<br>
 
 
 ```python
@@ -334,9 +333,6 @@ data.head()
   </tbody>
 </table>
 </div>
-
-
-<br>
 <br>
 
 
@@ -441,7 +437,4 @@ vif
   </tbody>
 </table>
 </div>
-
-
-<br>
 <br>
