@@ -10,6 +10,14 @@ pin: true
 
 ## Multicollinearity
 
+Multicollinearity occurs when two or more variables in a dataset are corealted with others. In simpler words, one predictor variable can be used to predict the other. This creates problem when we fit linear regression model and interpret the results. 
+
+Most important assumpstion of Regression analysis is that the independent variables should be independent. Each individual variable must contribute to the model. If a multicollinearity or degree of corrleation is high between variables in the data, then the assumption of linear regression gets violated. This needs to be taken care of before fitting a model.
+
+For example, person's height and weight can be the correlated features in dataset.
+
+We can 
+
 [Fork **Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork) on GitHub, rename the repository to `USERNAME.github.io` (where `USERNAME` is your GitHub username), and then open terminal and clone the fork to local by:
 
 ```terminal
