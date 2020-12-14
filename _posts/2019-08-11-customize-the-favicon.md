@@ -23,6 +23,9 @@ Bias means that the model favors one outcome more than the others and how far th
 
 Variance reflects the spreadness. How much the predictions for a given point vary between different realizations of the model. The model with high variance pays much attention to traning data i.e, tries to capture everything from the training data and end up with a very complex model. When it comes to testing data, it doesn't generalize well. So, such model leads to overfitting i.e. a low training error but high testing error. 
 
+
+## Bias-Variance Tradeoff
+
 ![upload-image](/assets/img/sample/Bias1.png)
 
 From above figure, we can see that how these two terms are important. If any of these two gets inflated or deflated, it leads to the overfitting or underfitting situation. It is neccessary to balance between bias and variance. We don't want to have a model with high errors. A balance between bias and variance minimizes the total error of the model. This balance is known as Bias-Variance tradeoff.
