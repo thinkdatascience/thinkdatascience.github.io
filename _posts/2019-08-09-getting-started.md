@@ -2,8 +2,8 @@
 title: Multicollinearlity and Variation Inflation Factor
 author: Akshay Adlakha & Akshaykumar Rao
 date: 2019-12-14 20:55:00 +0800
-categories: [Blogging, Tutorial]
-tags: [getting started]
+categories: [Machine Learning, Python]
+tags: [VIF]
 pin: true
 math: true
 mermaid: true
