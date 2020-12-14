@@ -21,9 +21,9 @@ VIF is calculated as follows:
 
 $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
-$$ VIF  =  1 \over R^2 $$
+$$ VIF  =  {1 \over R^2} $$
 
-\\(VIF  =  1 \over R^2 \\)
+
 
 For each variable in the dataset, VIF is c
 
