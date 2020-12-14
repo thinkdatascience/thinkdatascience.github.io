@@ -1,14 +1,14 @@
 ---
-title: Getting Started
-author: Cotes Chung
-date: 2019-08-09 20:55:00 +0800
+title: Multicollinearlity and Variation Inflation Factor
+author: Akshay Adlakha & Akshaykumar Rao
+date: 2019-12-14 20:55:00 +0800
 categories: [Blogging, Tutorial]
 tags: [getting started]
 pin: true
 ---
 
 
-## Installation
+## Multicollinearity
 
 [Fork **Chirpy**](https://github.com/cotes2020/jekyll-theme-chirpy/fork) on GitHub, rename the repository to `USERNAME.github.io` (where `USERNAME` is your GitHub username), and then open terminal and clone the fork to local by:
 
