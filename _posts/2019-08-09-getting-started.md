@@ -12,13 +12,13 @@ pin: true
 
 Multicollinearity occurs when two or more variables in a dataset are correlated with others. In simpler words, one predictor variable can be used to predict the other. This creates problem when we fit linear regression model and interpret the results. 
 
-Most important assumpstion of Regression analysis is that the independent variables should be independent. Each individual variable must contribute to the model. If a multicollinearity or degree of corrleation is high between variables in the data, then the assumption of linear regression gets violated. This needs to be taken care of before fitting a model.
+Most important assumption of Regression analysis is that each variable should be independent and must contribute to the model. If a multicollinearity or degree of corrleation is high between variables in the data, then the assumption of linear regression gets violated. This needs to be taken care of before fitting a model.
 
 For example, person's height and weight can be the correlated features in dataset.
 
 There are two types of multicollinearity:
 
-- Structural Multicollinearity: This type of multicollinearity is actually not present in the data. Rather it occurs when we create a new feature from other feature. For example, creating the feature x2 from the feature x. 
+- Structural Multicollinearity: This type of multicollinearity is actually not present in the data. Rather it occurs when we create a new feature from other feature. For example, creating the feature x^2 from the feature x. 
 
 - Data Multicollinearity: This type of multicollinearity is already present in the dataset rather than we create a situation of multicollinearity. For example, when we compute correlation coefficients, and we come to have correated features. 
 
