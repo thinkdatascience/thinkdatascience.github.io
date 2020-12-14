@@ -11,4 +11,14 @@ order: 4
 ---
 
 
-> **Note**: Add Markdown syntax content to file `_tabs/about.md` and it will show up on this page.
+> Akshay Adlakha
+  Masters in Data Science, University at Buffalo
+  
+  Previous Experience : AI/ML Architecture Intern, Revolutionary Integration Group Inc., June 2020 - August 2020
+                        Software Engineer, Xavient Digital - Powered by Telus International, Feb 2016 - July 2019
+
+> AkshayKumar Rao Rocherla
+  Masters in Data Science, University at Buffalo
+  
+  Previous Experience : AI/ML Architecture Intern, Revolutionary Integration Group Inc., June 2020 - August 2020
+                        Senior Software Engineer, Hexaware Technologies Ltd., Feb 2014 - May 2019
