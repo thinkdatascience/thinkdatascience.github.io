@@ -18,7 +18,7 @@ For example, person's height and weight can be the correlated features in datase
 
 There are two types of multicollinearity:
 
-- Structural Multicollinearity: This type of multicollinearity is actually not present in the data. Rather it occurs when we create a new feature from other feature. For example, creating the feature x^2 from the feature x. 
+- Structural Multicollinearity: This type of multicollinearity is actually not present in the data. Rather it occurs when we create a new feature from other feature. For example, creating the feature x<sup>2</sup> from the feature x. 
 
 - Data Multicollinearity: This type of multicollinearity is already present in the dataset rather than we create a situation of multicollinearity. For example, when we compute correlation coefficients, and we come to have correated features. 
 
