@@ -19,8 +19,6 @@ VIF measures the severity of multicollinearity in regression analysis
 
 VIF is calculated as follows:
 
-$$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
-
 $$ VIF_j  =  {1 \over 1 - R_j^2} $$
 
 
