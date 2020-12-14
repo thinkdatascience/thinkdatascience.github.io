@@ -5,7 +5,7 @@ date: 2020-12-14 20:55:00 +0800
 categories: [Machine Learning, Python]
 tags: [VIF]
 pin: true
-math: true
+math: true 
 mermaid: true
 ---
 
@@ -57,7 +57,7 @@ VIF is always positive and is high when R<sup>2</sup> is closer to 1.
 
 
 \\(R_j^2\\) value determines how well an independent variable is described by the other independent variables. 
-When \\(R_j^2\\) value is equal to 0, the variance of the remaining independent variables cannot be predicted from the j<sup>th</sup> independent variable. Therefore, when \\(R_j^2\\) = 0 (i.e VIF = 1) which implies that the j<sup>th</sup> variable is not correlated to the remaining variabeles or in other words, multicollinearity does not exist in this regression model. In such case, the variance of \\(x_j\\) is not inflated at all. 
+When \\(R_j^2\\) value is equal to 0, the variance of the remaining independent variables cannot be predicted from the j<sup>th</sup> independent variable. Therefore, when \\(R_j^2\\) = 0 (i.e VIF = 1) which implies that the j<sup>th</sup> variable is not correlated to the remaining variabeles or in other words, multicollinearity does not exist in this regression model. In such case, the variance of \\(_j\\) is not inflated at all. 
 
 
 > *Note*: As a rule of thumb, a VIF greater than 4 indicates that multicollinearity might exist and further investigation is required. VIF greater than 10 implies a significant multicollinearity that needs to be corrected.
