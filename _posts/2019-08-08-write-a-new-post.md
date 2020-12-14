@@ -21,11 +21,10 @@ VIF is calculated as follows:
 
 $$ x = {-b \pm \sqrt{b^2-4ac} \over 2a} $$
 
-$$ VIF  =  {1 \over R^2} $$
+$$ VIF  =  {1 \over 1 - R^2} $$
 
 
-
-For each variable in the dataset, VIF is c
+Each variable in the dataset is separately treated as the target variable and the remaining variables are treated as the predictors. Then, a linear model is fit and VIF for the target variable is calculated using the above equation (where \\(R^2\\) refers to the ). 
 
 
 
