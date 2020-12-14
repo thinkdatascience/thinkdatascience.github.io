@@ -53,7 +53,7 @@ and \\(R^2\\) value is calculated. Finally, VIF for the target variable is obtai
 
 VIF is always positive and is high when R<sup>2</sup> is closer to 1.  
 
-### Interpreting \\(R^2//) and VIF
+### Interpreting R<sup>2</sup> and VIF
 
 
 \\(R_j^2\\) value determines how well an independent variable is described by the other independent variables. 
