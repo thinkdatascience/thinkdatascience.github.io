@@ -24,14 +24,14 @@ author: ThinkDataScience                  # change to your full name
 avatar: /assets/img/sample/avatar.jpg   # support internet resources
 
 github:
-  username: thiinkdatascience             # change to your github username
+  username: thinkdatascience             # change to your github username
 
-twitter:
-  username: twitter_username            # change to your twitter username
+# twitter:
+#   username: twitter_username            # change to your twitter username
 
 social:
   name: ThinkDataScience                  # it will shows as the copyright owner in Footer
-  email: example@doamin.com             # change to your email address
+  email: thinkdatascience9@gmail.com             # change to your email address
   links:
     # The first element serves as the copyright owner's link
     - https://twitter.com/username      # change to your twitter homepage
