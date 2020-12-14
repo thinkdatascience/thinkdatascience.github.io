@@ -205,8 +205,8 @@ data.head()
   </tbody>
 </table>
 </div>
-
-
+<br>
+<br>
 
 
 ```python
@@ -336,6 +336,8 @@ data.head()
 </div>
 
 
+<br>
+<br>
 
 
 ```python
@@ -441,9 +443,5 @@ vif
 </div>
 
 
-
-
-```python
-
-```
-
+<br>
+<br>
