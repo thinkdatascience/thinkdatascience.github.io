@@ -12,13 +12,21 @@ order: 4
 
 
 > Akshay Adlakha
-  Masters in Data Science, University at Buffalo
-  
-  Previous Experience : AI/ML Architecture Intern, Revolutionary Integration Group Inc., June 2020 - August 2020
-                        Software Engineer, Xavient Digital - Powered by Telus International, Feb 2016 - July 2019
 
-> AkshayKumar Rao Rocherla
   Masters in Data Science, University at Buffalo
   
-  Previous Experience : AI/ML Architecture Intern, Revolutionary Integration Group Inc., June 2020 - August 2020
-                        Senior Software Engineer, Hexaware Technologies Ltd., Feb 2014 - May 2019
+  Previous Experience : 
+  
+  AI/ML Architecture Intern, Revolutionary Integration Group Inc., June 2020 - August 2020
+  
+  Software Engineer, Xavient Digital - Powered by Telus International, Feb 2016 - July 2019
+
+> Akshaykumar Rao Rocherla
+
+  Masters in Data Science, University at Buffalo
+  
+  Previous Experience : 
+  
+  AI/ML Architecture Intern, Revolutionary Integration Group Inc., June 2020 - August 2020
+                        
+  Senior Software Engineer, Hexaware Technologies Ltd., Feb 2014 - May 2019
