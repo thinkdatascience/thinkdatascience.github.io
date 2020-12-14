@@ -6,6 +6,25 @@ categories: [Blogging, Tutorial]
 tags: [writing]
 ---
 
+
+## Detecting Multicollinearity using Variance Inflation Factor
+
+Now that we know what multicollinearity is, how can we tell if it is present in our data ?
+Variance Inflation Factors (VIF) is one of the most common techniques used to detect multicollinearity.
+VIF measures the severity of multicollinearity in regression analysis
+
+> VIF provides an index that measures how much the variance of an estimated regression coefficient is increased because of collinearity.
+
+
+
+
+
+
+
+
+
+
+
 ## Naming and Path
 
 Create a new file named `YYYY-MM-DD-TITLE.EXTENSION` and put it in the `_post/` of the root directory. Please note that the `EXTENSION` must be one of `md` and `markdown`.
