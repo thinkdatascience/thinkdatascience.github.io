@@ -18,7 +18,7 @@ VIF measures the severity of multicollinearity in regression analysis
 VIF is calculated as follows:
 
 
-$$ VIF  =  1\over R^2
+$$ VIF  =  1 \over R^2
 
 For each variable in the dataset, VIF is c
 
