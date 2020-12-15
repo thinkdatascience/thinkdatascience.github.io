@@ -448,7 +448,7 @@ We can see that there are quite a few features having large VIF value. It means 
 
 ## How to deal with multicollinearity?
 
-Now that we know how to tell if multicollinearity exists in our dataset, how do we reduce it ? One way is to remove the features with high VIF as they provide redundant information. This is an iterative process : we start by dropping the variables with high VIF as they are highly predictable using other variables and then notice how it affects the VIF for other variable, and so on.
+Now that we know how to tell if multicollinearity exists in our dataset, how do we reduce it ? One way is to remove the features with high VIF as they provide redundant information. This is an iterative process : we start by dropping the variables with high VIF as they are highly predictable using other variables and then notice how it affects the VIF for other variables, and so on.
 
  `ptratio`, `rm`, `nox` and `tax` have a large VIF value. Let's see drop these variable and check the VIF of other variables. 
 
