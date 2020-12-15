@@ -9,17 +9,24 @@ mermaid: true
 ---
 
 
-## Detecting Multicollinearity using Variance Inflation Factor
+## R<sup>2</sup> and Adjusted R<sup>2</sup> 
 
-Now that we know what multicollinearity is, how can we tell if it is present in our data ?
-Variance Inflation Factors (VIF) is one of the most common techniques used to detect multicollinearity.
-VIF measures the severity of multicollinearity in regression analysis
+After fitting a regression model, you have to determine how well the model fits to the data. Is it good enough to generalize to unseen data? or Does it do a good job of explaining changes in the dependent variable?. In this post, we explore R-Squared and Adjusted R-Squared, its sigficance and limitations. 
 
-> VIF provides an index that measures how much the variance of an estimated regression coefficient is increased because of collinearity.
+> R<sup>2</sup> is a goodness of fit measure. It tells us that how close the data are to the fitted line. 
 
-VIF is calculated as follows:
+R<sup>2</sup> is calculated as follows:
 
-$$ VIF_j  =  {1 \over 1 - R_j^2} $$
+R<sup>2</sup> = Explained variation / Total variation
+
+or, R<sup>2</sup> = 1 −  Unexplained Variation / Total Variation
+
+
+This gives us the percentage of the response variable variation that is explained by our linear regression model.
+
+It is also known by other names such as Coefficient of Determination, or the coefficient of multiple determination for multiple regression.
+
+
 
 
 Each variable \\(x_j\\) in the dataset is separately treated as the target variable and the remaining variables are treated as the predictors. Next, a linear model is fit 
