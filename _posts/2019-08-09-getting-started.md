@@ -535,10 +535,8 @@ VIF for the remaining variables:
 
 We can see that dropping the 4 columns has reduced the VIF of the remaining columns.
 
-- <b>By combining two or more columns</b>
-
 ## Other ways to reduce multicollinearity
 
 - Combine two(or more) correlated features (based on domain knowlege) into a single column and check if multicollinearity is reduced.
 - Check correlation matrix (Pearson Correlation) and see correlated features. Remove high correlated features.
-- Use Dimensionality reduction techniques. PCA (Principal Component Analysis). It reduces the number of correlated features in the dataset by transforming into uncorrelated principal components. 
+- Use Dimensionality reduction techniques such as PCA (Principal Component Analysis). It reduces the number of correlated features in the dataset by transforming into uncorrelated principal components. 
