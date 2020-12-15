@@ -43,7 +43,8 @@ A model can have a low or a high R-Squared value. And, it is not necessarily goo
 
 ## Adjusted R-Squared
 
-The adjusted R-squared lets us to compare the descriptive power of regression models that include multiple predictors in the model. 
+> The adjusted R-squared lets us to compare the descriptive power of regression models that include multiple predictors in the model. 
 
 It solves the problem associated with R-Squared. Whenever we add a new predictor to a model, R-Squared value always increase irrespective of the fact that whether the added predictor is significant or not. So, it looks better for the fact that it has more variable but in reality it is not. It is necessary that it's value to be adjusted. Therefore, Adjusted R-Squared came to be better metric to evaluate a model. It only increases whenever a significant predictor is added to a model or, a given predictor improves the model more than what is predicted by chance otherwise it decreases. Whenever we have an overfitting situation, a high value of R-squared is obtained even though the model has less generalizability. 
+
 
