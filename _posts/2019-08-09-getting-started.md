@@ -56,23 +56,26 @@ VIF is always positive and is high when R<sup>2</sup> is closer to 1.
 ### Interpreting R<sup>2</sup> and VIF
 
 
+
 \\(R_j^2\\) value determines how well an independent variable is described by the other independent variables. 
-When \\(R_j^2\\) value is equal to 0, the variance of the remaining independent variables cannot be predicted from the j<sup>th</sup> independent variable. Therefore, when \\(R_j^2\\) = 0 (i.e VIF = 1) which implies that the j<sup>th</sup> variable is not correlated to the remaining variabeles or in other words, multicollinearity does not exist in this regression model. In such case, the variance of \\(_j\\) is not inflated at all. 
+When \\(R_j^2\\) value is equal to 0, the variance of the remaining independent variables cannot be predicted from the j<sup>th</sup> independent variable. Therefore, when \\(R_j^2\\) = 0 (i.e VIF = 1) which implies that the j<sup>th</sup> variable is not correlated to the remaining variabeles or in other words, multicollinearity does not exist in this regression model. In such case, the variance of \\(b_j\\) is not inflated at all. 
 
 
 > *Note*: As a rule of thumb, a VIF greater than 4 indicates that multicollinearity might exist and further investigation is required. VIF greater than 10 implies a significant multicollinearity that needs to be corrected.
 
 
+### VIF implementation in python
 
+`variance_inflation_factor` is available in `statsmodels.stats.outliers_influence` module to calculate VIF.
 
-
-
-
+We start by importing the necesary packages:
 ```python
 import pandas as pd
 from statsmodels.stats.outliers_influence import variance_inflation_factor
 ```
 
+For this article, we chose the Boston House Prices data set, which is also available in `sklearn` package. More info [here](https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html).
+This dataset has 503 rows and 13 columns.
 
 ```python
 data  = pd.read_csv("boston.csv")
@@ -336,6 +339,8 @@ data.head()
 <br>
 
 
+Finally, we calculate VIF for each variable using `variation_inflation_factor()` as below
+
 ```python
 vif = pd.DataFrame()
 vif["columns"] = data.columns
@@ -438,3 +443,7 @@ vif
 </table>
 </div>
 <br>
+
+
+We can see that there are quite a few features having large VIF value. It means that these features can be predicted using other features in the dataset. 
+
