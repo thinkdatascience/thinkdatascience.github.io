@@ -17,7 +17,7 @@ It is important to understand these two errors and the tradeoff to minimize the 
 
 ## Bias
 
-Bias means that the model favors one outcome more than the others and how far the model prediction from the correct prediction. It occurs due to simpler assumptions made by the model to make the predictions. The model with high bias pays very less attention to training data and oversimplies the model. In other words, the model leads to underfitting i.e, a high training and a high testing error. 
+Bias indicates how far is the model prediction from the correct prediction. It occurs due to simpler assumptions made by the model to make the predictions. The model with high bias pays very less attention to training data and oversimplies the model. In other words, the model leads to underfitting i.e, a high training and a high testing error. 
 
 ## Variance
 
