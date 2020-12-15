@@ -47,7 +47,11 @@ A model can have a low or a high R-Squared value. And, it is not necessarily goo
 
 It solves the problem associated with R-Squared. Whenever we add a new predictor to a model, R-Squared value always increase irrespective of the fact that whether the added predictor is significant or not. So, it looks better for the fact that it has more variable but in reality it is not. It is necessary that it's value to be adjusted. Therefore, Adjusted R-Squared came to be better metric to evaluate a model. It only increases whenever a significant predictor is added to a model or, a given predictor improves the model more than what is predicted by chance otherwise it decreases. Whenever we have an overfitting situation, a high value of R-squared is obtained even though the model has less generalizability. 
 
+Let's see an example of calculating R-Squared and Adjusted R-Squared.
 
+In python, r2_score metric is available in sklearn.metrics to calculate R-Squared value.
+
+We start by importing the necesary packages:
 
 ```python
 import pandas as pd
@@ -55,7 +59,7 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 ```
-
+For this article, we chose the Boston House Prices data set, which is also available in sklearn package. More info here. This dataset has 503 rows and 13 columns.
 
 ```python
 data  = pd.read_csv("boston.csv")
@@ -190,7 +194,7 @@ data.head()
 </div>
 
 
-
+We then drop few variables such as ptratio, rm, nox, tax, b.
 
 ```python
 df = data.drop(['ptratio', 'rm', 'nox', 'tax', 'b'], axis=1)
@@ -295,7 +299,7 @@ df.head()
 </div>
 
 
-
+Then, We normalize the data.
 
 ```python
 def normalize_data(data, columns):
@@ -483,7 +487,7 @@ df_normalized
 </div>
 
 
-
+Then, we fit our linear regression model on the dataset.
 
 ```python
 def linear_model_predictions(data):
@@ -491,13 +495,13 @@ def linear_model_predictions(data):
     lm.fit(data.iloc[:,:-1], data.iloc[:,-1])
     return lm.predict(data.iloc[:,:-1])
 ```
-
+Adjusted R-Squared is not directly available in the package. We defined a custom function to calculate it.
 
 ```python
 def calculate_adj_r2(r2, n, p):    #adjusted r2
     return(1-(1-r2)*(n-1)/(n-p-1))
 ```
-
+Now, we are calculating the R-Squared and Adjusted R-Squared value.
 
 ```python
 y_pred = linear_model_predictions(df_normalized)
