@@ -66,7 +66,7 @@ When \\(R_j^2\\) value is equal to 0, the variance of the remaining independent 
 
 ### VIF implementation in python
 
-`variance_inflation_factor` is available in `statsmodels.stats.outliers_influence` module to calculate VIF.
+In python, `variance_inflation_factor` function is available in `statsmodels.stats.outliers_influence` module to calculate VIF.
 
 We start by importing the necesary packages:
 ```python
@@ -210,7 +210,7 @@ data.head()
 </div>
 <br>
 
-
+We then drop the target variable MEDV : Median value of owner-occupied homes in $1000s
 ```python
 data = data.drop('medv', axis=1)
 data.head()
@@ -339,7 +339,7 @@ data.head()
 <br>
 
 
-Finally, we calculate VIF for each variable using `variation_inflation_factor()` as below
+Finally, we calculate VIF for each variable using `variation_inflation_factor()` as below:
 
 ```python
 vif = pd.DataFrame()
@@ -444,6 +444,91 @@ vif
 </div>
 <br>
 
-
 We can see that there are quite a few features having large VIF value. It means that these features can be predicted using other features in the dataset. 
 
+## How to deal with multicollinearity?
+
+Now that we know how to tell if multicollinearity exists in our dataset, how do we reduce it ? One way is to remove the features with high VIF as they provide redundant information. This is an iterative process : we start by dropping the variables with high VIF as they are highly predictable using other variables and then notice how it affects the VIF for other variable, and so on.
+
+ `ptratio`, `rm`, `nox` and `tax` have a large VIF value. Let's see drop these variable and check the VIF of other variables. 
+
+```python
+data = data.drop(['ptratio', 'rm', 'nox', 'tax'], axis=1)
+```
+
+VIF for the remaining variables:
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+</style>
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>columns</th>
+      <th>VIF</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>0</th>
+      <td>crim</td>
+      <td>2.095367</td>
+    </tr>
+    <tr>
+      <th>1</th>
+      <td>zn</td>
+      <td>2.334763</td>
+    </tr>
+    <tr>
+      <th>2</th>
+      <td>indus</td>
+      <td>9.016142</td>
+    </tr>
+    <tr>
+      <th>3</th>
+      <td>chas</td>
+      <td>1.116229</td>
+    </tr>
+    <tr>
+      <th>4</th>
+      <td>age</td>
+      <td>14.000758</td>
+    </tr>
+    <tr>
+      <th>5</th>
+      <td>dis</td>
+      <td>8.447694</td>
+    </tr>
+    <tr>
+      <th>6</th>
+      <td>rad</td>
+      <td>4.771767</td>
+    </tr>
+    <tr>
+      <th>7</th>
+      <td>b</td>
+      <td>13.537020</td>
+    </tr>
+    <tr>
+      <th>8</th>
+      <td>lstat</td>
+      <td>8.358925</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+We can see that dropping the 4 columns has reduced the VIF of the remaining columns.
+
+Another way to reduce multicollinearity is to combine two(or more) correlated features (based on domain knowlege) into a single column and check if multicollinearity is reduced.
