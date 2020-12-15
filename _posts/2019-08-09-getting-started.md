@@ -448,9 +448,12 @@ We can see that there are quite a few features having large VIF value. It means 
 
 ## How to deal with multicollinearity?
 
-Now that we know how to tell if multicollinearity exists in our dataset, how do we reduce it ? One way is to remove the features with high VIF as they provide redundant information. This is an iterative process : we start by dropping the variables with high VIF as they are highly predictable using other variables and then notice how it affects the VIF for other variables, and so on.
+Now that we know how to tell if multicollinearity exists in our dataset, how do we reduce it ? 
 
- `ptratio`, `rm`, `nox` and `tax` have a large VIF value. Let's see drop these variable and check the VIF of other variables. 
+*By dropping features with high VIF
+One way is to remove the features with high VIF as they provide redundant information. This is an iterative process : we start by dropping the variables with high VIF as they are highly predictable using other variables and then notice how it affects the VIF for other variables, and so on.
+
+ `ptratio`, `rm`, `nox` and `tax` have a large VIF value. Let's drop these variable and check the VIF of other variables. 
 
 ```python
 data = data.drop(['ptratio', 'rm', 'nox', 'tax'], axis=1)
@@ -531,4 +534,5 @@ VIF for the remaining variables:
 
 We can see that dropping the 4 columns has reduced the VIF of the remaining columns.
 
+*By combining two or more columns
 Another way to reduce multicollinearity is to combine two(or more) correlated features (based on domain knowlege) into a single column and check if multicollinearity is reduced.
