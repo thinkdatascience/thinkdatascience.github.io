@@ -47,9 +47,11 @@ A model can have a low or a high R-Squared value. And, it is not necessarily goo
 
 It solves the problem associated with R-Squared. Whenever we add a new predictor to a model, R-Squared value always increase irrespective of the fact that whether the added predictor is significant or not. So, it looks better for the fact that it has more variable but in reality it is not. It is necessary that it's value to be adjusted. Therefore, Adjusted R-Squared came to be better metric to evaluate a model. It only increases whenever a significant predictor is added to a model or, a given predictor improves the model more than what is predicted by chance otherwise it decreases. Whenever we have an overfitting situation, a high value of R-squared is obtained even though the model has less generalizability. 
 
+## Python Implementation
+
 Let's see an example of calculating R-Squared and Adjusted R-Squared.
 
-In python, r2_score metric is available in sklearn.metrics to calculate R-Squared value.
+In python, `r2_score` metric is available in `sklearn.metrics` to calculate R-Squared value.
 
 We start by importing the necesary packages:
 
@@ -59,7 +61,8 @@ from sklearn.preprocessing import MinMaxScaler
 from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 ```
-For this article, we chose the Boston House Prices data set, which is also available in sklearn package. More info here. This dataset has 503 rows and 13 columns.
+
+For this article, we chose the Boston House Prices data set, which is also available in sklearn package. More info [here]{https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html}. This dataset has 503 rows and 13 columns.
 
 ```python
 data  = pd.read_csv("boston.csv")
@@ -194,8 +197,8 @@ data.head()
 </div>
 
 
-We then drop few variables such as ptratio, rm, nox, tax, b.
 
+We then drop few variables such as `ptratio`, `rm`, `nox`, `tax`, `b`.
 ```python
 df = data.drop(['ptratio', 'rm', 'nox', 'tax', 'b'], axis=1)
 df.head()
@@ -299,8 +302,8 @@ df.head()
 </div>
 
 
-Then, We normalize the data.
 
+Then, We normalize the data.
 ```python
 def normalize_data(data, columns):
     data_columns = data.columns
@@ -487,7 +490,7 @@ df_normalized
 </div>
 
 
-Then, we fit our linear regression model on the dataset.
+Then, we fit a linear regression model on the dataset.
 
 ```python
 def linear_model_predictions(data):
