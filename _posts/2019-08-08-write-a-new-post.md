@@ -1,7 +1,7 @@
 ---
-title: Writing a New Post
-author: Cotes Chung
-date: 2019-08-08 14:10:00 +0800
+title: R<sup>2</sup> and Adjusted R<sup>2</sup> 
+author: Akshay Adlakha & Akshaykumar Rao
+date: 2020-12-15 08:10:00 +0800
 categories: [Blogging, Tutorial]
 tags: [writing]
 math: true
