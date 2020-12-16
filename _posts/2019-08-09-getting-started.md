@@ -78,9 +78,10 @@ The Independent T-Test, also called the two sample t-test, independent-samples t
 ### Mann-Whitney U test
 
 The Mann-Whitney U test is also called as the Mann–Whitney–Wilcoxon (MWW), Wilcoxon rank-sum test, or Wilcoxon–Mann–Whitney test. This is the non-parametric version of the popular t-test. It is used to compare differences between two independent groups when the dependent variable is either ordinal or continuous, but not normally distributed. For example, comparing the speed of people from two different groups in 100m race, where one group has trained for 4 weeks and the other has not. This test requires 
- > Two random, independent samples to compare.
- > The data is continuous - it must be possible to distinguish between values at the nth decimal place.
- > Scale of measurement should be ordinal, interval or ratio.
+
+ - Two random, independent samples to compare.
+ - The data is continuous - it must be possible to distinguish between values at the nth decimal place.
+ - Scale of measurement should be ordinal, interval or ratio.
  
 Null Hypothesis
 
