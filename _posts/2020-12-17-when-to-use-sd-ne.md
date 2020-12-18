@@ -1,16 +1,16 @@
 ---
-title: Multicollinearlity and Variation Inflation Factor
+title: When to use Gradient Descent or Normal Equation with Linear Regression.
 author: Akshay Adlakha & Akshaykumar Rao
-date: 2020-12-14 20:55:00 +0800
+date: 2020-12-17 20:55:00 +0800
 categories: [Machine Learning, Python]
-tags: [VIF]
+tags: [Linear Regression]
 pin: true
 math: true 
 mermaid: true
 ---
 
 
-## Multicollinearity
+## Gradient Descent
 
 Multicollinearity occurs when two or more variables in a dataset are correlated with others. In simpler words, one predictor variable can be used to predict the other. This creates problem when we fit linear regression model and interpret the results. 
 
