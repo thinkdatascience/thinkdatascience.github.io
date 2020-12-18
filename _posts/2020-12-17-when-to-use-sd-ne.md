@@ -1,5 +1,5 @@
 ---
-title: When to use Gradient Descent or the Normal Equation with Linear Regression.
+title: When to use Gradient Descent or the Normal Equation with Linear Regression?
 author: Akshay Adlakha & Akshaykumar Rao
 date: 2020-12-17 08:55:00 +0800
 categories: [Machine Learning, Python]
