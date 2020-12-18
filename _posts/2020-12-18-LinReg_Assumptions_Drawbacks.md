@@ -10,13 +10,13 @@ mermaid: true
 
 ## Assumptions of Linear Regression
 
-- ** Assumption 1: Linear Relationship **
+- **Assumption 1: Linear Relationship**
 > There is a linear relationship between the independent variables and the dependent variable.
 
 The relationship between the independent variables and the dependent variable can be checked checked using scatterplot. 
 
-- ** Assumption 2: Independence **
+- **Assumption 2: Independence**
 
-- ** Assumption 3: Homoscedasticity **
+- **Assumption 3: Homoscedasticity**
 
-- ** Assumption 4: Normality **
+- **Assumption 4: Normality**
