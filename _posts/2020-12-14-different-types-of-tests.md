@@ -57,7 +57,7 @@ Formula:
 
 $$ \rho=1-\frac{6 \sum d_{i}^{2}}{n (n^{2}-1)} $$
 
-\rho	=	Spearman's rank correlation coefficient
+\\(\rho\\)	=	Spearman's rank correlation coefficient
 
 \\(d_{i}\\)	=	difference between the two ranks of each observation
 
