@@ -21,17 +21,17 @@ It ranges between -1 and +1 that indicates to which extent 2 variables are linea
 
 Formula:
 
-r =\frac{\sum\left(x_{i}-\bar{x}\right)\left(y_{i}-\bar{y}\right)}{\sqrt{\sum\left(x_{i}-\bar{x}\right)^{2} \sum\left(y_{i}-\bar{y}\right)^{2}}}
+$$ r =\frac{\sum\left(x_{i}-\bar{x}\right)\left(y_{i}-\bar{y}\right)}{\sqrt{\sum\left(x_{i}-\bar{x}\right)^{2} \sum\left(y_{i}-\bar{y}\right)^{2}}} $$
 
 r	=	correlation coefficient
 
-x_{i}	=	values of the x-variable in a sample
+//(x_{i}//)	=	values of the x-variable in a sample
 
-\bar{x}	=	mean of the values of the x-variable
+//(\bar{x}//)	=	mean of the values of the x-variable
 
-y_{i}	=	values of the y-variable in a sample
+//(y_{i}//)	=	values of the y-variable in a sample
 
-\bar{y}	=	mean of the values of the y-variable
+//(\bar{y}//)	=	mean of the values of the y-variable
 
 
 ### Chi-Square Test
@@ -39,7 +39,7 @@ A Chi-Square Test, also written as χ² test, is used to find the strength of th
 
 Formula:
 
-\chi^{2}=\sum \frac{\left({O}_{i}-E_{i}\right)^{2}}{E_{i}}
+$$ \chi^{2}=\sum \frac{\left({O}_{i}-E_{i}\right)^{2}}{E_{i}} $$
 
 \chi^2	=	chi squared
 
