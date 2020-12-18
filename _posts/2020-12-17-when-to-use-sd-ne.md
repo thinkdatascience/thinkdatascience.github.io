@@ -14,11 +14,11 @@ In statistics, Linear regression is a linear approach to find the relationship b
 
 Y = mX + C
 
-m is the slope of the line and C is Y intercept.
+m is the slope of the line and C is the Y intercept.
 
 We have mean squared error, one of the loss function associated with a linear regression model. We aim to minimize the error to obtain optimum value of m and c. 
 
-![upload-image](/assets/img/sample/Bias1.png)
+![upload-image](/assets/img/sample/mse.png)
 
 ## Gradient Descent
 
