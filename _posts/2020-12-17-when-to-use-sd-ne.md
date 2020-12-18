@@ -26,7 +26,7 @@ Here are some comparison points between Gradient Descent and the Normal equation
 - There is a need to choose learning parameter alpha in Gradient Descent, whereas it is not required with the normal equation.
 - Gradient Descent method needs many iteration to converge but there is no need to iterate with the normal equation.
 - The complexity of Gradient Descent method is O(kn<sup>2</sup>), whereas the normal equation method has the complexity of O(n<sup>3</sup>) because it computes an inverse of X<sup>T</sup>X.
-- The Normal Equation method comes to be slow when we have large number of features, n. In this case, Gradient Descent method works well. In practice, when n exceeds 10,000 it might be a good time to go from a normal solution to a Gradient Descent method as matrix multiplication is very expensive with the large value of n.
+- The Normal Equation method comes to be slow when we have large number of features, n. In this case, Gradient Descent method works well. In practice, when n exceeds 10,000 it might be a good time to go from a normal solution to a Gradient Descent method as matrix multiplication is very expensive with the large value of n.  
 
 
 ## Normal Equation Noninvertibility
