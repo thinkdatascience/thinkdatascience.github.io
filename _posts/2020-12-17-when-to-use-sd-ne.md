@@ -20,7 +20,28 @@ We have mean squared error, one of the loss function associated with a linear re
 
 ![upload-image](/assets/img/sample/mse.png)
 
+Now we know the loss function, lets see the interesting part — minimizing it and finding m and c.
+
 ## Gradient Descent
+
+Gradient descent is an iterative optimization algorithm to find the minimum of a function.  
+
+We can relate the functionality of a Gradient Descent method to a person climbing down a hill. He goes down the slope and takes steps based on the position. When the slope steep, he takes large steps and small stelps when the slope is less steep. He stops when he reaches to the bottom of a hill. In similar way, Gradient Descent method works. It takes step in the direction of negative gradient and minimize the error. It uses Learning rate which decides how long it takes a step to descend. 
+
+This is four step process.
+
+-  Initiatize m and c, let m = 0 and c = 0. Let L be the learning rate. In general, L is chosen to be a small value for good accuracy. 
+-  Then, Find the partial derivative of the loss function with respect to m, and substitute in the current values of x, y, m and c in it to find the derivative value D.
+
+![upload-image](/assets/img/sample/gd1.png)
+
+![upload-image](/assets/img/sample/gd.png)
+
+- Using the following equation, we update the value of m and c.
+
+![upload-image](/assets/img/sample/gd2.png)
+
+- Repeat Steps 1 to 3 until we acheive the minimum error.  
 
 ## Normal Equation
 
