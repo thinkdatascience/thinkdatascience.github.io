@@ -25,13 +25,13 @@ $$ r =\frac{\sum\left(x_{i}-\bar{x}\right)\left(y_{i}-\bar{y}\right)}{\sqrt{\sum
 
 r	=	correlation coefficient
 
-//(x_{i}//)	=	values of the x-variable in a sample
+\\(x_{i}\\)	=	values of the x-variable in a sample
 
-//(\bar{x}//)	=	mean of the values of the x-variable
+\\(\bar{x}\\)	=	mean of the values of the x-variable
 
-//(y_{i}//)	=	values of the y-variable in a sample
+\\(y_{i}\\)	=	values of the y-variable in a sample
 
-//(\bar{y}//)	=	mean of the values of the y-variable
+\\(\bar{y}\\)	=	mean of the values of the y-variable
 
 
 ### Chi-Square Test
@@ -41,11 +41,11 @@ Formula:
 
 $$ \chi^{2}=\sum \frac{\left({O}_{i}-E_{i}\right)^{2}}{E_{i}} $$
 
-\chi^2	=	chi squared
+\\(\chi^2\\)	=	chi squared
 
-{O}_i	=	observed value
+\\({O}_i\\)	=	observed value
 
-E_{i}	=	expected value
+\\(E_{i}\\)	=	expected value
 
 ### Spearman Correlation
 
@@ -55,11 +55,11 @@ A Spearman Correlation test gives the strength of the association between two or
 
 Formula:
 
-\rho=1-\frac{6 \sum d_{i}^{2}}{n (n^{2}-1)}
+$$ \rho=1-\frac{6 \sum d_{i}^{2}}{n (n^{2}-1)} $$
 
 \rho	=	Spearman's rank correlation coefficient
 
-d_{i}	=	difference between the two ranks of each observation
+\\(d_{i}\\)	=	difference between the two ranks of each observation
 
 n	=	number of observations
 
