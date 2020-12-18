@@ -18,6 +18,8 @@ m is the slope of the line and C is Y intercept.
 
 We have mean squared error, one of the loss function associated with a linear regression model. We aim to minimize the error to obtain optimum value of m and c. 
 
+![upload-image](/assets/img/sample/Bias1.png)
+
 ## Gradient Descent
 
 ## Normal Equation
