@@ -70,4 +70,6 @@ If X<sup>T</sup>X is noninvertible, the common causes might be having:
 
 Solution: Removing a feature that is linearly dependent with another or removing one or more features when there are too many features in the dataset.
 
+## Conclusion
+
 So, use Gradient Descent method whenever there is a large number of features, n in the dataset. Otherwise go with the Normal Equation method. 
