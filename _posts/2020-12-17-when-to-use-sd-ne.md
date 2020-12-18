@@ -8,9 +8,9 @@ math: true
 mermaid: true
 ---
 
-In this tutorial we will learn when to use Gradient Desent or the Normal Equation method with Linear Regression. Both of these methods help to find optimum value of theta and find the best fit line for our model, or minimize the error. 
+In this tutorial we will learn when to use Gradient Desent or the Normal Equation method with Linear Regression. Both of these methods help to find optimum value of parameters, and find the best fit line for our model, or minimize the error. 
 
-In statistics, Linear regression is a linear approach to find the relationship between a dependent variable and one or more independent variables. Let X be the independent variable and Y be the dependent variable. So, a linear relatio between these two variables as follows:
+In statistics, Linear regression is a linear approach to find the relationship between a dependent variable and one or more independent variables. Let X be the independent variable and Y be the dependent variable. So, a linear relation between these two variables as follows:
 
 Y = mX + C
 
