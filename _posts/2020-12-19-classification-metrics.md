@@ -184,5 +184,5 @@ The following points to consider while choosing a metric:
 - Always be careful of what you are predicting. Keep your business objective in mind. There might be a case where Type I error is important and somewhere Type II error is important.
 - How the choice of evaluation metric might affect your final predictions.
 
-
+ 
 
