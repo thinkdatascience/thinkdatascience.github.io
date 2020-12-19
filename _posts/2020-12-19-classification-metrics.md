@@ -25,7 +25,7 @@ Confusion matrix is a table with 4 different combinations of predicted and actua
 
 We have four different terms here. Lets understand each of them.
 
-<b>True Positive</b>: You predicted positive and it’s correct.
+<b>True Positive</b>: You predicted positive and it’s correct. 
 
 A person has a disease, and a model predicted correctly.
 
