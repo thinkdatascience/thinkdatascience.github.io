@@ -69,7 +69,7 @@ We can also create this using [Scikit-Learn](https://scikit-learn.org/stable/mod
 
 Accuracy is number of true results to the total number of cases.
 
-Accuracy = (TP+TN)/(TP+FP+FN+TN)
+$$ Accuracy = (TP+TN) \over (TP+FP+FN+TN) $$
 
 Now, we have Python Implementation to calculate an accuracy of our model. We will use the same method to create a confusion matrix throughout this post to calculate other metrics.
 
