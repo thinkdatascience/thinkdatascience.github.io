@@ -83,7 +83,7 @@ F-1score = 2* Precision * Recall / Precision + Recall
 
 When to use: Use F-1 score when we want to have a model with good Precison and Recall.
 
-If you are a Doctor and you want to detect disease, you want to be sure that the person you detect has a disease (Precision) and you also want to detect as many persons with disease (Recall) as possible. Here, The F1 score manages this tradeoff between Precision and Recall.
+> If you are a Doctor and you want to detect disease, you want to be sure that the person you detect has a disease (Precision) and you also want to detect as many persons with disease (Recall) as possible. Here, The F1 score manages this tradeoff between Precision and Recall.
 
 ## AUC ROC
 
