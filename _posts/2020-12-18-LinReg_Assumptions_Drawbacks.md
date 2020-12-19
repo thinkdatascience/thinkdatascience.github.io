@@ -11,6 +11,7 @@ mermaid: true
 ## Assumptions of Linear Regression
 
 - **Assumption 1: Linear Relationship**
+
 > There is a linear relationship between the independent variables and the dependent variable.
 
 This assumption constraints the model to following type:
@@ -19,23 +20,26 @@ $$ Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + ... + \beta_kX_k + \epsilon $$
 
 where, \\( \epsilon \\) is the error term.
 
-The relationship between the independent variables and the dependent variable can be checked using scatterplot. If you relationship between the two variables is not linear, then you can try applying non-linear transformation such as log, reciprocal or square root to that independent variable and/or dependent variable.
+The relationship between the independent variables and the dependent variable can be checked using scatterplot. If the relationship between the two variables is not linear, then you can try applying non-linear transformation such as log, reciprocal or square root to that independent variable and/or dependent variable.
 
 - **Assumption 2: Independence**
+
 > Residuals are independent.
 
-If the residuals are not independent, then there will be some sort of patern among the residuals which the linear regression model will not be able to capture. 
+If the residuals are not independent, then there will be some sort of pattern among the residuals which the linear regression model will not be able to capture. 
 To check the independence of residuals, we can detect the pattern in the plot of residuals vs predicted (or actual) values. Another way is to use the [Durbin-Watson](https://en.wikipedia.org/wiki/Durbin%E2%80%93Watson_statistic) test, which measures the degree of correlation of each residual error with the previous residual error. 
 
 - **Assumption 3: Homoscedasticity**
+
 > The residuals have constant variance and not a function of y (or x)
 
-Homoscedasticity is the is the property of a dataset to have a constant variance. 
+Homoscedasticity is the property of a dataset to have a constant variance. 
 If the residuals have a variance that is a function of y (called heteroscedasticity), then they are no longer identically distributed and the regression results will be difficult to interpret.  One way to detect heterscedasticity is to create a scatterplot of fitted value vs residual. If the residuals seem to become much more spread out as the fitted values increase, then it is a sign of heterscedasticity. 
 Heteroscedasticity can be treated by transforming the dependent variable e.g. log transform.
 
 
 - **Assumption 4: Normality**
+
 > The error terms are normally distributed with a mean of 0.
 
 The error terms (or residuals) are normally ditributed and also have the same (but unknown) variance.
@@ -50,7 +54,8 @@ In the Q-Q plot or the Quantile-Quantile plot, the normality assumption is met i
 
 Make sure that you remove the outliers as they can have a huge impact on the Q-Q plot.
 
-- **Assumption 5: Multicollinearity**
+- **Assumption 5: No Multicollinearity**
+
 > The independent variables are linearly independent of each other i.e. there os no multicollinearity in the data.
 
 To learn more about how to detect and treat multicollinearity in the dataset, refer to [this](https://thinkdatascience.github.io/posts/Multicollinearity&VIF/) link.
