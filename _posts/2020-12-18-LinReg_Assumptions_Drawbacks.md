@@ -24,12 +24,8 @@ The relationship between the independent variables and the dependent variable ca
 - **Assumption 2: Independence**
 > Residuals are independent.
 
-``` python 
-
-  print("hi")
-
-```
-
+If the residuals are not independent, then there will be some sort of patern among the residuals which the linear regression model will not be able to capture. 
+To check the independence of residuals, we can detect the pattern in the plot of residuals vs predicted (or actual) values. Another way is to use the [Durbin-Watson](https://en.wikipedia.org/wiki/Durbin%E2%80%93Watson_statistic) test, which measures the degree of correlation of each residual error with the previous residual error. 
 
 - **Assumption 3: Homoscedasticity**
 > The residuals have constant variance and not a function of y (or x)
@@ -53,6 +49,11 @@ To check if the residuals are normally distributed, we can visualise them using 
 In the Q-Q plot or the Quantile-Quantile plot, the normality assumption is met if the points on the plot roughly form a straight line. 
 
 Make sure that you remove the outliers as they can have a huge impact on the Q-Q plot.
+
+- **Assumption 5: Multicollinearity**
+> The independent variables are linearly independent of each other i.e. there os no multicollinearity >in the data.
+
+To learn more about how to detect and treat multicollinearity in the dataset, refer to [this](https://thinkdatascience.github.io/posts/Multicollinearity&VIF/) link.
 
 ## Drawbacks of Linear Regression
 
