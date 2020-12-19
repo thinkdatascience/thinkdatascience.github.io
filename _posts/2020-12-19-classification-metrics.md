@@ -1,7 +1,7 @@
 ---
-title: R<sup>2</sup> and Adjusted R<sup>2</sup> 
+title: Classification Evaluation metrics every Data Scientist must know And when exactly to use them?
 author: Akshay Adlakha & Akshaykumar Rao
-date: 2020-12-15 08:10:00 +0800
+date: 2020-12-19 08:10:00 +0800
 categories: [Blogging, Tutorial]
 tags: [writing]
 math: true
@@ -9,17 +9,22 @@ mermaid: true
 ---
 
 
-## R<sup>2</sup> and Adjusted R<sup>2</sup> 
+## Classification Evaluation metrics
 
-After fitting a regression model, you have to determine how well the model fits to the data. Is it good enough to generalize to unseen data? or Does it do a good job of explaining changes in the dependent variable?. In this post, we explore R-Squared and Adjusted R-Squared, its sigficance and limitations. 
+After fitting a classification model, you have to evaluate your model. We try to increase the accuracy of our model. But, in practice, Accuracy is actually a good measure to evalute the performance of our classification model. Yes, but it depends on the nature of problem. Sometimes it is good, sometimes it is bad.  
 
-> R<sup>2</sup> is a goodness of fit measure. It tells us that how close the data are to the fitted line. 
+> Every business problem is a little different, and it should be optimized differently.
 
-R<sup>2</sup> is calculated as follows:
+For example, when we have 100 samples in our data out of which 95 are zero's and rest 5 are one's. In this case, our model will predict mostly zero and give 95% accuracy. But, in reality this model is not effective because when it has to predict one it will predict zero. So, whenever we have imbalance classes in our data Accuracy is not a good measure to evaluate. We have different other ways to assess the performance of our model. In this post, we will explore various evaluation metrics.
 
-R<sup>2</sup> = Explained variation / Total variation
+# Confusion Matrix
 
-or, R<sup>2</sup> = 1 −  Unexplained Variation / Total Variation
+Confusion matrix is a table with 4 different combinations of predicted and actual values. It is widely used to evaluate the perfomance of classification model. Based on Confusion matrix, there are different metrics can be used such as Accuracy, Precision, Recall, F-Score, Specificity. We will go through each of these metrics.
+
+![upload-image](/assets/img/sample/confusion.png)
+
+
+
 
 
 This gives us the percentage of the response variable variation that is explained by our linear regression model.
