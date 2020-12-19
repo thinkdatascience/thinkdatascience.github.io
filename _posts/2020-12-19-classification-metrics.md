@@ -17,7 +17,7 @@ After fitting a classification model, you have to evaluate your model. We try to
 
 For example, when we have 100 samples in our data out of which 95 are zero's and rest 5 are one's. In this case, our model will predict mostly zero and give 95% accuracy. But, in reality this model is not effective because when it has to predict one it will predict zero. So, whenever we have imbalance classes in our data Accuracy is not a good measure to evaluate. We have different other ways to assess the performance of our model. In this post, we will explore various evaluation metrics.
 
-# Confusion Matrix
+## Confusion Matrix
 
 Confusion matrix is a table with 4 different combinations of predicted and actual values. It is widely used to evaluate the perfomance of classification model. Based on Confusion matrix, there are different metrics can be used such as Accuracy, Precision, Recall, F-Score, Specificity. We will go through each of these metrics.
 
