@@ -34,7 +34,7 @@ To check the independence of residuals, we can detect the pattern in the plot of
 > The residuals have constant variance and not a function of y (or x)
 
 Homoscedasticity is the property of a dataset to have a constant variance. 
-If the residuals have a variance that is a function of y (called heteroscedasticity), then they are no longer identically distributed and the regression results will be difficult to interpret.  One way to detect heterscedasticity is to create a scatterplot of fitted value vs residual. If the residuals seem to become much more spread out as the fitted values increase, then it is a sign of heterscedasticity. 
+If the residuals have a variance that is a function of y (called heteroscedasticity), then they are no longer identically distributed and the regression results will be difficult to interpret.  One way to detect heteroscedasticity is to create a scatterplot of fitted value vs residual. If the residuals seem to become much more spread out as the fitted values increase, then it is a sign of heteroscedasticity. 
 Heteroscedasticity can be treated by transforming the dependent variable e.g. log transform.
 
 
@@ -43,20 +43,20 @@ Heteroscedasticity can be treated by transforming the dependent variable e.g. lo
 > The error terms are normally distributed with a mean of 0.
 
 The error terms (or residuals) are normally ditributed and also have the same (but unknown) variance.
-If the residuals are not normally distributed then their randomness is lost and the model is no longer able to explain the relationship bwtween the independednt and dependent variable.
+If the residuals are not normally distributed then their randomness is lost and the model is no longer able to explain the relationship between the independent and dependent variable.
 
 E(y) = E( \\(\beta_0 + \beta_iX_i +\epsilon (i) \\) )       
 
 Only if E(\\( \epsilon \\) (i)) = 0,  then the expectation of the target variable y is equal to the to the expectation of the model. 
 
-To check if the residuals are normally distributed, we can visualise them using Q-Q plot. 
+To check if the residuals are normally distributed, we can visualize them using Q-Q plot. 
 In the Q-Q plot or the Quantile-Quantile plot, the normality assumption is met if the points on the plot roughly form a straight line. 
 
 Make sure that you remove the outliers as they can have a huge impact on the Q-Q plot.
 
 - **Assumption 5: No Multicollinearity**
 
-> The independent variables are linearly independent of each other i.e. there os no multicollinearity in the data.
+> The independent variables are linearly independent of each other i.e. there is no multicollinearity in the data.
 
 To learn more about how to detect and treat multicollinearity in the dataset, refer to [this](https://thinkdatascience.github.io/posts/Multicollinearity&VIF/) link.
 
