@@ -15,7 +15,7 @@ After fitting a classification model, you have to evaluate your model. We try to
 
 > Every business problem is a little different, and it should be optimized differently.
 
-For example, when we have 100 samples in our data out of which 95 are zero's and rest 5 are one's. In this case, our model will predict mostly zero and give 95% accuracy. But, in reality this model is not effective because when it has to predict one it will predict zero. So, whenever we have imbalance classes in our data Accuracy is not a good measure to evaluate. We have different other ways to assess the performance of our model. In this post, we will explore various evaluation metrics.
+For example, when we have 100 samples in our data out of which 95 are zero's and rest 5 are one's. In this case, our model will predict mostly zero and give 95% accuracy. But, in reality this model is not effective because when it has to predict one it will predict zero. So, whenever we have imbalance classes in our data Accuracy is not a good measure to evaluate. We have different other ways to assess the performance of our model. In this post, we will explore various evaluation metrics and its python implementation from scratch. 
 
 ## Confusion Matrix
 
@@ -25,27 +25,45 @@ Confusion matrix is a table with 4 different combinations of predicted and actua
 
 We have four different terms here. Lets understand each of them.
 
-<b>True Positive</b>: You predicted positive and it’s true.
+<b>True Positive</b>: You predicted positive and it’s correct.
 
-A person has a disease, and a model predicted it true.
+A person has a disease, and a model predicted correctly.
 
-<b>True Negative</b>: A model predicted negative, and it's true.
+<b>True Negative</b>: A model predicted negative, and it's correct.
 
-A model predicted a person doesn't have disease and, it's true.
+A model predicted a person doesn't have disease and, it's correct.
 
-<b>False Positive</b>: A model predicted Positive, but it's false.
+<b>False Positive</b>: A model predicted Positive, but it's incorrect.
 
 You predicted a person has a disease but in reality, he doesn't have.
 
 This is also known as <b> Type I</b> Error. 
 
-<b>False Negative</b>: You predicted Negative, but it's false.
+<b>False Negative</b>: You predicted Negative, but it's incorrect.
 
 A model predicted that a person is not having a disease but he actually has.
 
 False Negative is also commonly called as <b> Type II</b> Error. 
 
+Here we have a method to create a confusion matrix in Python.
 
+``` python
+  
+  def ConfusionMatrix(y_true,y_pred):
+    """
+    :type y_true: numpy.ndarray
+    :type y_pred: numpy.ndarray
+    :rtype: float
+    """
+    values =len(set(y_true))
+    result = y_true*values + y_pred;
+    result = np.histogram(result,bins=values*values)
+    result = np.reshape(result[0],(values,values))
+    return result
+
+```
+
+We can also create this using [Scikit-Learn](https://scikit-learn.org/stable/modules/generated/sklearn.metrics.confusion_matrix.html).
 
 ## Accuracy
 
@@ -79,7 +97,7 @@ F-Score is another useful metric in evaluating classification model. It is a tra
 
 The F-1 score is a number between 0 and 1 and is the harmonic mean of precision and recall.
 
-F-1score = 2* Precision * Recall / Precision + Recall
+F-1 score = 2* Precision * Recall / Precision + Recall
 
 When to use: Use F-1 score when we want to have a model with good Precison and Recall.
 
