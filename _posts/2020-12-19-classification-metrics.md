@@ -119,7 +119,7 @@ Recall = (TP)/(TP+FN)
 
 Lets see Python implementation:
 
-```
+```python
   def Recall(y_true,y_pred):
     """
     :type y_true: numpy.ndarray
@@ -140,6 +140,16 @@ F-Score is another useful metric in evaluating classification model. It is a tra
 The F-1 score is a number between 0 and 1 and is the harmonic mean of precision and recall.
 
 F-1 score = 2* Precision * Recall / Precision + Recall
+
+Now we see our python method to find an F-1 score.
+
+``` python
+    def Recall(y_true,y_pred):
+       recall = Recall(y_true, y_pred)
+       precison = Precision(y_true, y_pred)
+       F1score = (2*recall*precison)/ (recall + precison)
+       return F1score
+```
 
 When to use: Use F-1 score when we want to have a model with good Precison and Recall.
 
