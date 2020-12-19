@@ -4,7 +4,6 @@ author: Akshay Adlakha & Akshaykumar Rao
 date: 2020-12-14 20:55:00 +0800
 categories: [Machine Learning, Python]
 tags: [VIF]
-pin: true
 math: true 
 mermaid: true
 ---
