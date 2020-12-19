@@ -167,7 +167,7 @@ We have two more terms to understand AUC ROC.
 
 <b>Specificity</b> is just the proportion of falses our model is capturing. Also known as False Positive rate.
 
-\\(Specificity = FPR(False Positive Rate) = {FP} \over {TN + FP}
+\\(Specificity = FPR(False Positive Rate) = {FP} \over {TN + FP} \\)
 
 When we plot these two TPR and FPR, we get ROC curve. 
 
