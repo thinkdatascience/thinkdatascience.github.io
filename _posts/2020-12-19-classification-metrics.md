@@ -69,7 +69,7 @@ We can also create this using [Scikit-Learn](https://scikit-learn.org/stable/mod
 
 Accuracy is number of true results to the total number of cases.
 
-Accuracy = \\((TP+TN) \over (TP+FP+FN+TN) \\)
+\\(Accuracy = (TP+TN) \over (TP+FP+FN+TN) \\)
 
 Now, we have Python Implementation to calculate an accuracy of our model. We will use the same method to create a confusion matrix throughout this post to calculate other metrics.
 
@@ -95,7 +95,7 @@ When to use: Use Accuracy when we have balanced classes or not skewed. It should
 
 Precision tells us what proportions of predicted positives is truly positives.
 
-$$ Precision = {(TP)} \over (TP+FP) $$
+\\(Precision =  (TP) \over (TP+FP) \\)
 
 Python Implementation:
 
@@ -115,7 +115,7 @@ When to use: Precision can be used when we want to be sure of our prediction bec
 
 Now we have Recall, it is very important and useful metrics. It tells us that what proportions of actual positives are predicted correctly.
 
-Recall = (TP)/(TP+FN)
+\\(Recall = (TP) \over (TP+FN) \\)
 
 Lets see Python implementation:
 
@@ -139,7 +139,7 @@ F-Score is another useful metric in evaluating classification model. It is a tra
 
 The F-1 score is a number between 0 and 1 and is the harmonic mean of precision and recall.
 
-F-1 score = 2* Precision * Recall / Precision + Recall
+\\(F-1 score = {2* Precision * Recall} \over {Precision + Recall}\\)
 
 Now we see our python method to find an F-1 score.
 
@@ -163,7 +163,7 @@ We have two more terms to understand AUC ROC.
 
 <b>Sensitivity</b> is same as Recall. It is just the proportion of trues our model is capturing. It is also known as True Positive Rate(TPR).
 
-Sensitivty = TPR(True Positive Rate)= Recall = TP/(TP+FN)
+\\( Sensitivty = TPR(True Positive Rate) = Recall = {TP} \over (TP+FN) \\)
 
 <b>Specificity</b> is just the proportion of falses our model is capturing. Also known as False Positive rate.
 
