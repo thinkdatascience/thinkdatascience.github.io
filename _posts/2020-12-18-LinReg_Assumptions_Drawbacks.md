@@ -16,15 +16,16 @@ mermaid: true
 This assumption constraints the model to following type:
 
 $$ Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + ... + \beta_kX_k + \epsilon $$
+where, \\( \epsilon \\) is the error term.
 
-The relationship between the independent variables and the dependent variable can be checked checked using scatterplot. 
+The relationship between the independent variables and the dependent variable can be checked using scatterplot. If you relationship between the two variables is not linear, then you can try applying non-linear transformation such as log, reciprocal or square root to that independent variable and/or dependent variable.
 
 - **Assumption 2: Independence**
 
 - **Assumption 3: Homoscedasticity**
 
 - **Assumption 4: Normality**
-
+> The error terms are normally distributed
 ## Drawbacks of Linear Regression
 
 So, we have talked about the assumptions of Linear Regression. Now, it is time to discuss some of the drawbacks of Linear Regression.
