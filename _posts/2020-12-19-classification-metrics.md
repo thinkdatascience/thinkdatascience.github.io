@@ -71,6 +71,24 @@ Accuracy is number of true results to the total number of cases.
 
 Accuracy = (TP+TN)/(TP+FP+FN+TN)
 
+Now, we have Python Implementation to calculate an accuracy of our model. We will use the same method to create a confusion matrix throughout this post to calculate other metrics.
+
+```python
+  
+  def Accuracy(y_true,y_pred):
+    """
+    :type y_true: numpy.ndarray
+    :type y_pred: numpy.ndarray
+    :rtype: float
+    
+    """
+    cm = ConfusionMatrix(y_true, y_pred)
+    correct_pred_sum = cm.trace()
+    length_test = len(y_true)
+    accuracy = correct_pred_sum / length_test
+    return accuracy
+```
+
 When to use: Use Accuracy when we have balanced classes or not skewed. It should not be used with imbalanced dataset because model can be reasonably accurate, but not at all valuable.
 
 ## Precision
