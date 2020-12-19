@@ -95,7 +95,7 @@ When to use: Use Accuracy when we have balanced classes or not skewed. It should
 
 Precision tells us what proportions of predicted positives is truly positives.
 
-Precision = (TP)/(TP+FP)
+$$ Precision = {(TP)} \over (TP+FP) $$
 
 Python Implementation:
 
