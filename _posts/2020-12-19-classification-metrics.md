@@ -97,6 +97,18 @@ Precision tells us what proportions of predicted positives is truly positives.
 
 Precision = (TP)/(TP+FP)
 
+Python Implementation:
+
+```python
+   def Precision(y_true,y_pred):
+    """
+    :type y_true: numpy.ndarray
+    :type y_pred: numpy.ndarray
+    """
+    cm = ConfusionMatrix(y_true, y_pred)
+    return(np.diag(cm) / np.sum(cm, axis = 0)) 
+```
+
 When to use: Precision can be used when we want to be sure of our prediction because being precise will leave other assumptions unnoticed.
 
 ## Recall
@@ -104,6 +116,18 @@ When to use: Precision can be used when we want to be sure of our prediction bec
 Now we have Recall, it is very important and useful metrics. It tells us that what proportions of actual positives are predicted correctly.
 
 Recall = (TP)/(TP+FN)
+
+Lets see Python implementation:
+
+```
+  def Recall(y_true,y_pred):
+    """
+    :type y_true: numpy.ndarray
+    :type y_pred: numpy.ndarray
+    """
+    cm = ConfusionMatrix(y_true, y_pred)
+    return(np.diag(cm) / np.sum(cm, axis = 1))
+```
 
 When to use: Recall is used when we want to predict as many positive as possible. 
 
