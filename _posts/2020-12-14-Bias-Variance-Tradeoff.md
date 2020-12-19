@@ -4,7 +4,6 @@ author: Akshay Adlakha & Akshaykumar Rao
 date: 2020-12-14 00:34:00 +0800
 categories: [Blogging, Tutorial]
 tags: [favicon]
-pin: true
 math: true
 mermaid: true
 ---
