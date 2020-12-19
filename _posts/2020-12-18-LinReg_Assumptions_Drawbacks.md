@@ -51,7 +51,7 @@ In the Q-Q plot or the Quantile-Quantile plot, the normality assumption is met i
 Make sure that you remove the outliers as they can have a huge impact on the Q-Q plot.
 
 - **Assumption 5: Multicollinearity**
-> The independent variables are linearly independent of each other i.e. there os no multicollinearity >in the data.
+> The independent variables are linearly independent of each other i.e. there os no multicollinearity in the data.
 
 To learn more about how to detect and treat multicollinearity in the dataset, refer to [this](https://thinkdatascience.github.io/posts/Multicollinearity&VIF/) link.
 
