@@ -13,6 +13,10 @@ mermaid: true
 - **Assumption 1: Linear Relationship**
 > There is a linear relationship between the independent variables and the dependent variable.
 
+This assumption constraints the model to following type:
+
+$$ Y = \beta_0 + \beta_1 X_1 + \beta_2 X_2 + ... + \beta_kX_k + \epsilon $$
+
 The relationship between the independent variables and the dependent variable can be checked checked using scatterplot. 
 
 - **Assumption 2: Independence**
