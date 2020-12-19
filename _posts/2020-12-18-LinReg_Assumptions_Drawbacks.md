@@ -41,9 +41,9 @@ Heteroscedasticity can be treated by transforming the dependent variable e.g. lo
 The error terms (or residuals) are normally ditributed and also have the same (but unknown) variance.
 If the residuals are not normally distributed then their randomness is lost and the model is no longer able to explain the relationship bwtween the independednt and dependent variable.
 
-E(y) = E( //(\beta_0 + \beta_iX_i +\epsilon (i) \\) )       
+E(y) = E( \\(\beta_0 + \beta_iX_i +\epsilon (i) \\) )       
 
-Only if E(//( \epsilon \\) (i)) = 0,  then the expectation of the target variable y is equal to the to the expectation of the model. 
+Only if E(\\( \epsilon \\) (i)) = 0,  then the expectation of the target variable y is equal to the to the expectation of the model. 
 
 To check if the residuals are normally distributed, we can visualise them using Q-Q plot. 
 In the Q-Q plot or the Quantile-Quantile plot, the normality assumption is met if the points on the plot roughly form a straight line. 
