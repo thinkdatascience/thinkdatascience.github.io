@@ -50,16 +50,16 @@ Here we have a method to create a confusion matrix in Python.
 ``` python
   
   def ConfusionMatrix(y_true,y_pred):
-    """
-    :type y_true: numpy.ndarray
-    :type y_pred: numpy.ndarray
-    :rtype: float
-    """
-    values =len(set(y_true))
-    result = y_true*values + y_pred;
-    result = np.histogram(result,bins=values*values)
-    result = np.reshape(result[0],(values,values))
-    return result
+     """
+     :type y_true: numpy.ndarray
+     :type y_pred: numpy.ndarray
+     :rtype: float
+     """
+     values =len(set(y_true))
+     result = y_true*values + y_pred;
+     result = np.histogram(result,bins=values*values)
+     result = np.reshape(result[0],(values,values))
+     return result
 
 ```
 
@@ -75,18 +75,18 @@ Now, we have Python Implementation to calculate an accuracy of our model. We wil
 
 ```python
   
-  def Accuracy(y_true,y_pred):
-    """
-    :type y_true: numpy.ndarray
-    :type y_pred: numpy.ndarray
-    :rtype: float
+   def Accuracy(y_true,y_pred):
+     """
+     :type y_true: numpy.ndarray
+     :type y_pred: numpy.ndarray
+     :rtype: float
     
-    """
-    cm = ConfusionMatrix(y_true, y_pred)
-    correct_pred_sum = cm.trace()
-    length_test = len(y_true)
-    accuracy = correct_pred_sum / length_test
-    return accuracy
+     """
+     cm = ConfusionMatrix(y_true, y_pred)
+     correct_pred_sum = cm.trace()
+     length_test = len(y_true)
+     accuracy = correct_pred_sum / length_test
+     return accuracy
 ```
 
 When to use: Use Accuracy when we have balanced classes or not skewed. It should not be used with imbalanced dataset because model can be reasonably accurate, but not at all valuable.
@@ -101,12 +101,12 @@ Python Implementation:
 
 ```python
    def Precision(y_true,y_pred):
-    """
-    :type y_true: numpy.ndarray
-    :type y_pred: numpy.ndarray
-    """
-    cm = ConfusionMatrix(y_true, y_pred)
-    return(np.diag(cm) / np.sum(cm, axis = 0)) 
+      """
+      :type y_true: numpy.ndarray
+      :type y_pred: numpy.ndarray
+      """
+      cm = ConfusionMatrix(y_true, y_pred)
+      return(np.diag(cm) / np.sum(cm, axis = 0)) 
 ```
 
 When to use: Precision can be used when we want to be sure of our prediction because being precise will leave other assumptions unnoticed.
@@ -120,13 +120,13 @@ Recall = (TP)/(TP+FN)
 Lets see Python implementation:
 
 ```python
-  def Recall(y_true,y_pred):
-    """
-    :type y_true: numpy.ndarray
-    :type y_pred: numpy.ndarray
-    """
-    cm = ConfusionMatrix(y_true, y_pred)
-    return(np.diag(cm) / np.sum(cm, axis = 1))
+   def Recall(y_true,y_pred):
+     """
+     :type y_true: numpy.ndarray
+     :type y_pred: numpy.ndarray
+     """
+     cm = ConfusionMatrix(y_true, y_pred)
+     return(np.diag(cm) / np.sum(cm, axis = 1))
 ```
 
 When to use: Recall is used when we want to predict as many positive as possible. 
