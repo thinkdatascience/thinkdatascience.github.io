@@ -26,10 +26,15 @@ PCA offers so many benefits other than reducing the dimension of dataset.
 Now, Lets see what are the steps involved in this algorithm:
 
 - Normalize or Scale your data. 
+
 - Obtain the Covariance matrix.
+
 - Compute the eigenvalues and eigenvectors from the Covariance matrix to find the Principal Components.
+
 - Sort the eigenvectors from the highest eigenvalue to the lowest.
+
 - Select the number of principal components.
+
 
 > Note: PCA is not a feature selection technique. It is rather a feature extraction method as it transforms the data into the principal components.
 
