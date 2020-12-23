@@ -2,8 +2,8 @@
 title: Classification Evaluation metrics every Data Scientist must know And when exactly to use them?
 author: Akshay Adlakha & Akshaykumar Rao
 date: 2020-12-19 08:10:00 +0800
-categories: [Blogging, Tutorial]
-tags: [writing]
+categories: [Machine Learning, Python]
+tags: [Classification Model, Evaluation Metrics]
 math: true
 mermaid: true
 ---
