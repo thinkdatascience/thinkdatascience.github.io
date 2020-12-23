@@ -2,8 +2,8 @@
 title: Bias-Variance Tradeoff
 author: Akshay Adlakha & Akshaykumar Rao
 date: 2020-12-14 00:34:00 +0800
-categories: [Blogging, Tutorial]
-tags: [favicon]
+categories: [Machine Learning, Python]
+tags: [Machine Learning]
 math: true
 mermaid: true
 ---
