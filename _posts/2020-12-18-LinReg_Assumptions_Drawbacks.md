@@ -2,8 +2,8 @@
 title: Linear Regression - Assumptions and Drawbacks
 author: Akshay Adlakha & Akshaykumar Rao
 date: 2020-12-18 08:10:00 +0800
-categories: [Blogging, Tutorial]
-tags: [writing]
+categories: [Machine Learning, Python]
+tags: [Machine Learning, Linear Model]
 math: true
 mermaid: true
 ---
