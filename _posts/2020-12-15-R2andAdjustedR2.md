@@ -2,8 +2,8 @@
 title: R<sup>2</sup> and Adjusted R<sup>2</sup> 
 author: Akshay Adlakha & Akshaykumar Rao
 date: 2020-12-15 08:10:00 +0800
-categories: [Blogging, Tutorial]
-tags: [writing]
+categories: [Machine Learning, Python]
+tags: [Evaluation Metrics, Linear Model]
 math: true
 mermaid: true
 ---
