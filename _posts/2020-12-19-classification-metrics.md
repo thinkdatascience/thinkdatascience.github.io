@@ -139,7 +139,7 @@ F-Score is another useful metric in evaluating classification model. It is a tra
 
 The F-1 score is a number between 0 and 1 and is the harmonic mean of precision and recall.
 
-$$ F-1 score = {2 * Precision * Recall \over Precision + Recall} $$
+$$ F-1 Score = {2 * Precision * Recall \over Precision + Recall} $$
 
 Now we see our python method to find an F-1 score.
 
