@@ -133,13 +133,13 @@ When to use: Recall is used when we want to predict as many positive as possible
 
 Recall and Precision both are useful metric for imbalanced dataset.
 
-## F-Score
+## F-1 Score
 
 F-Score is another useful metric in evaluating classification model. It is a trade-off between Precision and Recall.
 
 The F-1 score is a number between 0 and 1 and is the harmonic mean of precision and recall.
 
-$$F1 score = {{2 * Precision * Recall} \over {Precision + Recall}} $$
+$$ F-1 score = {{2 * Precision * Recall} \over {Precision + Recall}} $$
 
 Now we see our python method to find an F-1 score.
 
