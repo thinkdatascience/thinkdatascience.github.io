@@ -50,9 +50,21 @@ def PCA(X_train,N):
     :type N: int
     :rtype: numpy.ndarray
     """
+    
+    # Step 1: Normalizing data
+    
     X_train -= np.mean(X_train, axis = 0)  
+    
+    # Step 2: Computing the Covariance matrix
+    
     covarianceM = np.cov(X_train, rowvar = False)
+   
+    # Step 3: Identifying Eigenvectors and Eigenvalues using the Covariance matrix.
+    
     eigenValues , eigenVectors = np.linalg.eig(covarianceM)
+    
+    # Step 4: Sorting the eigenvectors from the highest eigenvalue to the lowest.
+
     index = np.argsort(eigenValues)[::-1]
     eigenValues = eigenValues[index]
     eigenVectors = eigenVectors[:,index]
@@ -60,6 +72,8 @@ def PCA(X_train,N):
     totalSum =sum(eigenValues)
     variance = [(i/totalSum)*100 for i in sorted(eigenValues, reverse = True)]
     cumValues = np.cumsum(variance)
+    
+    # Transforming data.
     
     reducedData = np.dot(X_train, eigenVectors[:,:N])
     return (reducedData)
