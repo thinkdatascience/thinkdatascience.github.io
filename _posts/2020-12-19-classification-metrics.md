@@ -135,7 +135,7 @@ Recall and Precision both are useful metric for imbalanced dataset.
 
 ## F-1 Score
 
-F-Score is another useful metric in evaluating classification model. It is a trade-off between Precision and Recall.
+F-1 Score is another useful metric in evaluating classification model. It is a trade-off between Precision and Recall.
 
 The F-1 score is a number between 0 and 1 and is the harmonic mean of precision and recall.
 
