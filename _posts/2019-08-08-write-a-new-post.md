@@ -73,7 +73,7 @@ def PCA(X_train,N):
     variance = [(i/totalSum)*100 for i in sorted(eigenValues, reverse = True)]
     cumValues = np.cumsum(variance)
     
-    # Transforming data.
+    # Step 5: Transforming data.
     
     reducedData = np.dot(X_train, eigenVectors[:,:N])
     return (reducedData)
