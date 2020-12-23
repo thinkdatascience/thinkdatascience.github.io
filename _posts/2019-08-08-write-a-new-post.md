@@ -40,6 +40,7 @@ Now, Lets see what are the steps involved in this algorithm:
 
 We know the steps to implement an algorithm and its benefits. Lets see its implementation in Python.
 
+
 ```python
 import numpy as np
 import pandas as pd
