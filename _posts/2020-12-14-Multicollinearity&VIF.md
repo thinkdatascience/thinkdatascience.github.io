@@ -11,7 +11,9 @@ mermaid: true
 
 ## Multicollinearity
 
-Multicollinearity occurs when two or more variables in a dataset are correlated with others. In simpler words, one predictor variable can be used to predict the other. This creates problem when we fit linear regression model and interpret the results. 
+Multicollinearity occurs when two or more variables in a dataset are correlated with others. In simpler words, one predictor variable can be used to predict the other. This creates problem when we fit linear regression model and interpret the results.
+
+![upload-image](/assets/img/sample/Multicollinearity.webp)
 
 Most important assumption of Regression analysis is that each variable should be independent and must contribute to the model. If a multicollinearity or degree of corrleation is high between variables in the data, then the assumption of linear regression gets violated. This needs to be taken care of before fitting a model.
 
