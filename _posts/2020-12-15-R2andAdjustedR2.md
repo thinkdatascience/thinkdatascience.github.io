@@ -13,6 +13,8 @@ mermaid: true
 
 After fitting a regression model, you have to determine how well the model fits to the data. Is it good enough to generalize to unseen data? or Does it do a good job of explaining changes in the dependent variable?. In this post, we explore R-Squared and Adjusted R-Squared, its sigficance and limitations. 
 
+![upload-image](/assets/img/sample/r2.jpeg)
+
 > R<sup>2</sup> is a goodness of fit measure. It tells us that how close the data are to the fitted line. 
 
 R<sup>2</sup> is calculated as follows:
