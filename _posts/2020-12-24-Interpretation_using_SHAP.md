@@ -12,20 +12,33 @@ Interpreting machine learning model is one of the most important tasks in data s
 Consider a scenario where you might need to explain to your customer why the bank has rejected his/her loan application or another scenario where you want to explain your model's decisions in a humman-understandable way to your clients. While it is easy to interpret models such as linear regression or decision trees due it its inherent assumptions and simplicity. However, it is difficult to interpret complex "black blox" models such as Random Forests, XGBoost or Neural Neworks.
 
 In this article we'll explain how these black box models can be intrepreted. We'll use python library called SHAP(SHapley Additive exPlanations) for the same. 
+SHAP uses shapley values which are the measures of contributions each feature has in the machine learning model.
 
 
-
-
-#### Import Libraries
-
+We start by importing the necessary libraries.
 
 ```python
 import pandas as pd
 import shap
 from sklearn.model_selection import train_test_split
-from sklearn.ensemble import RandomForestClassifier
 from xgboost import XGBClassifier
 ```
+
+We will use the [Haberman's survival dataset](https://archive.ics.uci.edu/ml/datasets/haberman's+survival) from the UCI Machine learning repository.
+
+Dataset Information:
+
+The dataset contains cases from a study that was conducted between 1958 and 1970 at the University of Chicago's Billings Hospital on the survival of patients who had undergone surgery for breast cancer.
+
+
+Attribute Information:
+
+1. Age of patient at time of operation (numerical)
+2. Patient's year of operation (year - 1900, numerical)
+3. Number of positive axillary nodes detected (numerical)
+4. Survival status (class attribute)
+-- 1 = the patient survived 5 years or longer
+-- 2 = the patient died within 5 year
 
 
 ```python
@@ -100,7 +113,7 @@ df.head()
 </table>
 </div>
 
-
+Next, we separate the target variable and the predictors.
 
 
 ```python
@@ -109,6 +122,7 @@ df = df.drop('Survival_Status', axis=1)
 
 ```
 
+Our target variable has values 1's and 2's. We convert it to 0's and 1's as needed by our ml models.
 
 ```python
 # we convert the labels from 1-2 to 0-1 as required for our tree based-models
@@ -127,6 +141,7 @@ print("Value counts After:\n",y.value_counts())
     Name: Survival_Status, dtype: int64
     
 
+Next, we split the data into train and test sets.
 
 ```python
 X_train, X_test, y_train, y_test = train_test_split(df,y, 
@@ -135,16 +150,7 @@ X_train, X_test, y_train, y_test = train_test_split(df,y,
                                                    stratify = y)
 ```
 
-
-```python
-rf = RandomForestClassifier(n_estimators = 10, random_state = 42)
-rf.fit(X_train, y_train)
-print(rf.score(X_test, y_test))
-```
-
-    0.782608695652174
-    
-
+Building XGBoost model
 
 ```python
 xgb = XGBClassifier(random_state = 42)
@@ -152,13 +158,10 @@ xgb.fit(X_train, y_train)
 print(xgb.score(X_test, y_test))
 ```
 
-    The use of label encoder in XGBClassifier is deprecated and will be removed in a future release. To remove this warning, do the following: 1) Pass option use_label_encoder=False when constructing XGBClassifier object; and 2) Encode your labels (y) as integers starting with 0, i.e. 0, 1, 2, ..., [num_class - 1].
-    
-
-    [15:28:44] WARNING: C:/Users/Administrator/workspace/xgboost-win64_release_1.3.0/src/learner.cc:1061: Starting in XGBoost 1.3.0, the default evaluation metric used with the objective 'binary:logistic' was changed from 'error' to 'logloss'. Explicitly set eval_metric if you'd like to restore the old behavior.
     0.7391304347826086
     
 
+Now that our model is built, we are ready to interpret it.
 
 ```python
 explainer = shap.TreeExplainer(xgb)
