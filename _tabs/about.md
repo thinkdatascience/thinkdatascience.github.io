@@ -20,6 +20,22 @@ order: 4
   AI/ML Architecture Intern, Revolutionary Integration Group Inc., June 2020 - August 2020
   
   Software Engineer, Xavient Digital - Powered by Telus International, Feb 2016 - July 2019
+  
+  -
+  type: github
+  icon: 'fab fa-github-alt'
+# -
+#   type: twitter
+#   icon: 'fab fa-twitter'
+-
+  type: email
+  icon: 'fas fa-envelope'
+  noblank: true           
+-
+  type: rss
+  icon: 'fas fa-rss'
+  noblank: true
+
 
 > Akshaykumar Rao Racherla
 
