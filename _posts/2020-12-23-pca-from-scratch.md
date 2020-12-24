@@ -94,5 +94,10 @@ pcadata = PCA(x,2)
 
 ```
 
+## Conclusion
+
+Now you must be feeling that this is not difficult to implement from scratch. Yes, it is not difficult. You can use this implementation with other datasets. 
+
+
 
  
