@@ -14,6 +14,8 @@ The errors associated with machine learning models are of two types:
 
 It is important to understand these two errors and the tradeoff to minimize the total error and avoid Underfitting & Overfitting of the model.
 
+![upload-image](/assets/img/sample/Biasd.png)
+
 ## Bias
 
 Bias indicates how far is the model prediction from the correct prediction. It occurs due to simpler assumptions made by the model to make the predictions. The model with high bias pays very less attention to training data and oversimplies the model. In other words, the model leads to underfitting i.e, a high training and a high testing error. 
