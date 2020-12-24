@@ -10,7 +10,10 @@ mermaid: true
   
 
 ## Classification Evaluation metrics
- 
+
+
+![upload-image](/assets/img/sample/image5.jpg)
+
 After fitting a classification model, you have to evaluate your model. We try to increase the accuracy of our model. But, in practice, Accuracy is actually a good measure to evalute the performance of our classification model. Yes, but it depends on the nature of problem. Sometimes it is good, sometimes it is bad.  
 
 > Every business problem is a little different, and it should be optimized differently.
