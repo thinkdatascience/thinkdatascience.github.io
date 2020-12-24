@@ -10,6 +10,8 @@ mermaid: true
 
 ## Assumptions of Linear Regression
 
+![upload-image](/assets/img/sample/wordle2.png)
+
 - **Assumption 1: Linear Relationship**
 
 > There is a linear relationship between the independent variables and the dependent variable.
