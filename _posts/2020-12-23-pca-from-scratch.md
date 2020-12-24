@@ -40,6 +40,8 @@ Now, Lets see what are the steps involved in this algorithm:
 
 > Note: PCA is not a feature selection technique. It is rather a feature extraction method as it transforms the data into the principal components.
 
+## Implementation
+
 We know the steps to implement an algorithm and its benefits. Lets see its implementation in Python.
 
 
