@@ -14,7 +14,7 @@ The errors associated with machine learning models are of two types:
 
 It is important to understand these two errors and the tradeoff to minimize the total error and avoid Underfitting & Overfitting of the model.
 
-![upload-image](/assets/img/sample/images.jpeg)
+![upload-image](/assets/img/sample/bises.png)
 
 ## Bias
 
