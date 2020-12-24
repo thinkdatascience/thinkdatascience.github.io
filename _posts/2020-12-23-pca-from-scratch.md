@@ -13,6 +13,8 @@ mermaid: true
 
 Principal Component Analysis is a dimensionality reduction technique. It is an unsupervised learning alorithm which reduces the number of features in the dataset while retaining most of the variation or information. In this blog, we will implement this algorithm from scratch in Python.
 
+![PCA-idea](/assets/img/sample/Principal_Component.png)
+
 PCA offers so many benefits other than reducing the dimension of dataset. 
 
 - Reduces Training time: PCA reduces the training time significantly as it results in smaller dataset. Thus, we have less computation time.
