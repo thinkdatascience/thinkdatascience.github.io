@@ -25,7 +25,7 @@ The most critical part of Machine Learning model life cycle is to interpret mode
  
 For any machine learning project, it is really important for tweaking to find out why the model makes predictions the way it does. So, Interpreting models and the importance of each predictor should become second nature. LIME will make this easy to interpret machine learning model.
 
-LIME isn’t the only library for interpreting machine learning model. We have got an alternative one -  SHAP. You can learn more about it here: [link](https://thinkdatascience.github.io/posts/Interpretation_using_SHAP/)
+LIME isn’t the only library for interpreting machine learning model. We have got an alternative one -  SHAP. You can learn more about it [here.](https://thinkdatascience.github.io/posts/Interpretation_using_SHAP/)
 
 Let's see what actually is:
 
