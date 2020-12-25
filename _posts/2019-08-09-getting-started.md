@@ -218,7 +218,7 @@ result = explainer.explain_instance(data_row=X_test.iloc[5],
 result.show_in_notebook(show_table=True)
 ```
 
-![upload-image](/assets/img/sample/lime1.jpg)
+![upload-image](/assets/img/sample/lime1.png)
 
 
 ```python
@@ -250,7 +250,7 @@ result20 = explainer.explain_instance(data_row=X_test.iloc[20],
 result20.show_in_notebook(show_table=True)
 ```
 
-![upload-image](/assets/img/sample/lime2.jpg)
+![upload-image](/assets/img/sample/lime2.png)
 
 ```python
 result20.as_list()
