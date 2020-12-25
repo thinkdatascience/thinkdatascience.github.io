@@ -25,7 +25,7 @@ The most critical part of Machine Learning model life cycle is to interpret mode
  
 For any machine learning project, it is really important for tweaking to find out why the model makes predictions the way it does. So, Interpreting models and the importance of each predictor should become second nature. LIME will make this easy to interpret machine learning model.
 
-LIME isn’t the only library for interpreting machine learning model. We have got an alternative one -  SHAP. You can learn more about it here:
+LIME isn’t the only library for interpreting machine learning model. We have got an alternative one -  SHAP. You can learn more about it here: [link](https://thinkdatascience.github.io/posts/Interpretation_using_SHAP/)
 
 Let's see what actually is:
 
@@ -53,7 +53,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 ```
 
-Here, we are reading our data. You can get this data from [here.](https://archive.ics.uci.edu/ml/datasets/Real+estate+valuation+data+set)
+Here, we are reading our data. You can get this Real Estate valuation data from [here.](https://archive.ics.uci.edu/ml/datasets/Real+estate+valuation+data+set)
 
 ```python
 data = pd.read_excel('Realestate.xlsx')
@@ -221,6 +221,9 @@ result.show_in_notebook(show_table=True)
 ![upload-image](/assets/img/sample/lime1.png)
 
 
+From the above results, we can see that our model predicted a price of 38.93 per unit area. It is also showing us that which features contributed positively or negatively. X2 feature had a value 36.60. This results say that a value above 26.85 has a negative impact of 5.50 on the prediction. In similar way, a value above 289.32 for X3 feature is having a significant impact. Now, we know the contribution of our freatures and can interpret our results easily. This helps in understanding our business problem and reaching out to the goal faster. 
+
+
 ```python
 result.as_list()
 ```
@@ -238,6 +241,7 @@ result.as_list()
      ('24.96 < X5 latitude <= 24.97', 0.012082440378980944)]
 
 
+We will the result of another instance. A model predicted a house price of 50.08 per unit area. Most of the features had a positive impact on the prediction.
 
 
 ```python
@@ -251,6 +255,8 @@ result20.show_in_notebook(show_table=True)
 ```
 
 ![upload-image](/assets/img/sample/lime2.png)
+
+
 
 ```python
 result20.as_list()
@@ -267,4 +273,8 @@ result20.as_list()
      ('No > 312.50', 0.3360695047391088),
      ('X4 number of convenience stores > 6.00', 0.06323751180901528)]
 
+
+## Conclusion
+
+Interpreting machine learning models is quite simple with LIME. It provides you a simple and easy way of explaining what’s going on below the surface to non-technical people. And, we don't even need worry about visualization. LIME has a lot different visualizations. Moreover, it not only works with tabular data, you can interpret the text and image data as well.   
 
