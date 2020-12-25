@@ -199,7 +199,7 @@ So, we have build our model. It is time to see the implementation of LIME. As we
 from lime import lime_tabular
 ```
 
-We will use the LimeTabularExplainer to explain the behaviour of our Random Forest model. Here we are passing our training data in the form of array because Lime only accepts numpy array.
+We will use the `LimeTabularExplainer` to explain the behaviour of our Random Forest model. Here we are passing our training data in the form of array because Lime only accepts numpy array.
 
 ```python
 explainer = lime_tabular.LimeTabularExplainer(training_data= np.array(X_train),
