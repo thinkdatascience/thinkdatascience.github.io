@@ -1,5 +1,5 @@
 ---
-title: How to interpret your Machine Learning model using LIME?
+title: How to interpret your Machine Learning model using LIME??????
 author: Akshay Adlakha & Akshaykumar Rao
 date: 2020-12-24 06:55:00 +0800
 categories: [Machine Learning, Python]
@@ -41,7 +41,11 @@ To use LIME, you need to install it through the terminal.
  
 LIME explains how our model is behaving. If a model is not doing what it intends to do, there might be a good chance that you have done some mistake in the data preprocessing. And, if we know what we did wrong, we can easily correct it. 
 
+Lets see how we can use LIME to interpret our machine learning models.
+
 ## Python Implementation
+
+Lets start by importing necessary libraries.
 
 ```python
 import numpy as np
@@ -49,6 +53,7 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 ```
 
+Here, we are reading our data. You can get this data from [here.](https://archive.ics.uci.edu/ml/datasets/Real+estate+valuation+data+set)
 
 ```python
 data = pd.read_excel('Realestate.xlsx')
@@ -60,7 +65,7 @@ data.head()
 ```
 
 
-
+We have 6 input features and our target feature - Y house price of unit area.
 
 <div>
 <style scoped>
@@ -149,15 +154,17 @@ data.head()
   </tbody>
 </table>
 </div>
+<br>
 
 
-
+Now we take out the target feature.
 
 ```python
 y = data['Y house price of unit area']
 X = data.drop('Y house price of unit area', axis=1)
 ```
 
+Here, we split our data into training and testing set.
 
 ```python
 X_train,X_test, Y_train, Y_test = train_test_split(X,
@@ -167,6 +174,7 @@ X_train,X_test, Y_train, Y_test = train_test_split(X,
                                                 )
 ```
 
+Lets build our Random Forest Regressor model.
 
 ```python
 from sklearn.ensemble import RandomForestRegressor
@@ -185,12 +193,13 @@ model.fit(X_train,Y_train)
     RandomForestRegressor(random_state=0)
 
 
-
+So, we have build our model. It is time to see the implementation of LIME. As we are using a tabular data. So, we will import `lime_tabular` from the lime package.
 
 ```python
 from lime import lime_tabular
 ```
 
+We will use the LimeTabularExplainer to explain the behaviour of our Random Forest model. Here we are passing our training data in the form of array because Lime only accepts numpy array.
 
 ```python
 explainer = lime_tabular.LimeTabularExplainer(training_data= np.array(X_train),
@@ -198,16 +207,18 @@ explainer = lime_tabular.LimeTabularExplainer(training_data= np.array(X_train),
                                              feature_names=X_train.columns)
 ```
 
+Now, we will see an explaination for the 5th instance in our test set. 
 
 ```python
 result = explainer.explain_instance(data_row=X_test.iloc[5],
                                    predict_fn=model.predict)
 ```
 
-
 ```python
 result.show_in_notebook(show_table=True)
 ```
+
+![upload-image](/assets/img/sample/lime1.jpg)
 
 
 ```python
@@ -239,6 +250,7 @@ result20 = explainer.explain_instance(data_row=X_test.iloc[20],
 result20.show_in_notebook(show_table=True)
 ```
 
+![upload-image](/assets/img/sample/lime2.jpg)
 
 ```python
 result20.as_list()
