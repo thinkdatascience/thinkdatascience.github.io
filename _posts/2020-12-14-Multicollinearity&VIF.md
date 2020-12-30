@@ -11,19 +11,19 @@ mermaid: true
 
 ## Multicollinearity
 
-Multicollinearity occurs when two or more variables in a dataset are correlated with others. In simpler words, one predictor variable can be used to predict the other. This creates problem when we fit linear regression model and interpret the results.
+Multicollinearity occurs when two or more variables in a dataset are correlated with others. In simpler words, one predictor variable can be used to predict the other. This creates a problem when we fit the linear regression model and interpret the results.
 
 ![upload-image](/assets/img/sample/Multicollinearity.webp)
 
-Most important assumption of Regression analysis is that each variable should be independent and must contribute to the model. If a multicollinearity or degree of corrleation is high between variables in the data, then the assumption of linear regression gets violated. This needs to be taken care of before fitting a model.
+The most important assumption of Regression analysis is that each variable should be independent and must contribute to the model. If multicollinearity or degree of correlation is high between variables in the data, then the assumption of linear regression gets violated. This needs to be taken care of before fitting a model.
 
-For example, person's height and weight can be the correlated features in dataset.
+For example, a person's height and weight can be the correlated features in the dataset.
 
 There are two types of multicollinearity:
 
-- Structural Multicollinearity: This type of multicollinearity is actually not present in the data. Rather it occurs when we create a new feature from other feature. For example, creating the feature x<sup>2</sup> from the feature x. 
+- Structural Multicollinearity: This type of multicollinearity is not present in the data. Rather it occurs when we create a new feature from another feature. For example, creating the feature x<sup>2</sup> from the feature x. 
 
-- Data Multicollinearity: This type of multicollinearity is already present in the dataset rather than we create a situation of multicollinearity. For example, when we compute correlation coefficients, and we come to have correated features. 
+- Data Multicollinearity: This type of multicollinearity is already present in the dataset rather than we create a situation of multicollinearity. For example, when we compute correlation coefficients, and we come to have correlated features. 
 
 ## What Problems Do Multicollinearity Cause?
 
@@ -31,9 +31,9 @@ This can cause two types of problems:
 
 - The model coefficients become so sensitive to small changes in the model. Even a small change can change the value drastically.
 
-- It reduces the statstical power of hypothesis testing. We can't rely the p-values to identify the significant features. Basically, it reduces the precision of the estimated coefficients and becomes difficult to specify the correct model.
+- It reduces the statistical power of hypothesis testing. We can't rely on the p-values to identify the significant features. It reduces the precision of the estimated coefficients and becomes difficult to specify the correct model.
 
-So, if there is high of degree of multicollinearity, then there would be high problematic effects. It affects only the correlated variables. Other variables remain unaffected and contribute well to the model.
+So, if there is a high degree of multicollinearity, then there would be highly problematic effects. It affects only the correlated variables. Other variables remain unaffected and contribute well to the model.
 
 
 ## Detecting Multicollinearity using Variance Inflation Factor
@@ -49,8 +49,7 @@ VIF is calculated as follows:
 $$ VIF_j  =  {1 \over 1 - R_j^2} $$
 
 
-Each variable \\(x_j\\) in the dataset is separately treated as the target variable and the remaining variables are treated as the predictors. Next, a linear model is fit 
-and \\(R^2\\) value is calculated. Finally, VIF for the target variable is obtained using the above equation.
+Each variable \\(x_j\\) in the dataset is separately treated as the target variable and the remaining variables are treated as the predictors. Next, a linear model is fit and \\(R^2\\) value is calculated. Finally, VIF for the target variable is obtained using the above equation.
 
 VIF is always positive and is high when R<sup>2</sup> is closer to 1.  
 
@@ -62,14 +61,14 @@ VIF is always positive and is high when R<sup>2</sup> is closer to 1.
 When \\(R_j^2\\) value is equal to 0, the variance of the remaining independent variables cannot be predicted from the j<sup>th</sup> independent variable. Therefore, \\(R_j^2\\) = 0 (i.e VIF = 1)  implies that the j<sup>th</sup> variable is not correlated to the remaining variabels or in other words, multicollinearity does not exist in this regression model. In such case, the variance of \\(b_j\\) is not inflated at all. 
 
 
-> *Note*: As a rule of thumb, a VIF greater than 4 indicates that multicollinearity might exist and further investigation is required. VIF greater than 10 implies a significant multicollinearity that needs to be corrected.
+> *Note*: As a rule of thumb, a VIF greater than 4 indicates that multicollinearity might exist and further investigation is required. VIF greater than 10 implies significant multicollinearity that needs to be corrected.
 
 
 ### VIF implementation in python
 
 In python, `variance_inflation_factor` function is available in `statsmodels.stats.outliers_influence` module to calculate VIF.
 
-We start by importing the necesary packages:
+We start by importing the necessary packages:
 ```python
 import pandas as pd
 from statsmodels.stats.outliers_influence import variance_inflation_factor
@@ -445,13 +444,13 @@ vif
 </div>
 <br>
 
-We can see that there are quite a few features having large VIF value. It means that these features can be predicted using other features in the dataset. 
+We can see that quite a few features are having large VIF values. It means that these features can be predicted using other features in the dataset. 
 
 ## How to deal with multicollinearity?
 
-Now that we know how to tell if multicollinearity exists in our dataset, how do we reduce it? One way is to remove the features with high VIF as they provide redundant information. This is an iterative process : we start by dropping the variables with high VIF as they are highly predictable using other variables and then notice how it affects the VIF for other variables, and so on.
+Now that we know how to tell if multicollinearity exists in our dataset, how do we reduce it? One way is to remove the features with high VIF as they provide redundant information. This is an iterative process: we start by dropping the variables with high VIF as they are highly predictable using other variables and then notice how it affects the VIF for other variables, and so on.
 
- `ptratio`, `rm`, `nox` and `tax` have a large VIF value. Let's drop these variable and check the VIF of other variables. 
+ `ptratio`, `rm`, `nox`, and `tax` have a large VIF value. Let's drop these variables and check the VIF of other variables. 
 
 ```python
 data = data.drop(['ptratio', 'rm', 'nox', 'tax'], axis=1)
@@ -534,6 +533,6 @@ We can see that dropping the 4 columns has reduced the VIF of the remaining colu
 
 ## Other ways to reduce multicollinearity
 
-- Combine two(or more) correlated features (based on domain knowlege) into a single column and check if multicollinearity is reduced.
-- Check correlation matrix (Pearson Correlation) and see correlated features. Remove high correlated features.
-- Use Dimensionality reduction techniques such as PCA (Principal Component Analysis). It reduces the number of correlated features in the dataset by transforming into uncorrelated principal components. 
+- Combine two(or more) correlated features (based on domain knowledge) into a single column and check if multicollinearity is reduced.
+- Check the correlation matrix (Pearson Correlation) and see correlated features. Remove high correlated features.
+- Use Dimensionality reduction techniques such as PCA (Principal Component Analysis). It reduces the number of correlated features in the dataset by transforming them into uncorrelated principal components. 
