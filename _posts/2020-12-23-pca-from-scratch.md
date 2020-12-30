@@ -11,21 +11,21 @@ mermaid: true
 
 ## Principal Component Analysis
 
-Principal Component Analysis is a dimensionality reduction technique. It is an unsupervised learning alorithm which reduces the number of features in the dataset while retaining most of the variation or information. In this blog, we will implement this algorithm from scratch in Python.
+Principal Component Analysis is a dimensionality reduction technique. It is an unsupervised learning algorithm that reduces the number of features in the dataset while retaining most of the variance or information. In this blog, we will implement this algorithm from scratch in Python.
 
 ![PCA-idea](/assets/img/sample/Principal_Component.png)
 
-PCA offers so many benefits other than reducing the dimension of dataset. 
+PCA offers so many benefits other than reducing the dimension of the dataset. 
 
-- Reduces Training time: PCA reduces the training time significantly as it results in smaller dataset. Thus, we have less computation time.
+- Reduces Training time: PCA reduces the training time significantly as it results in a smaller dataset. Thus, we have less computation time.
 
-- Remove Noise: PCA helps in removing noise from the dataset. It is widely used algorithm to detect outliers.
+- Remove Noise: PCA helps in removing noise from the dataset. It is a widely used algorithm to detect outliers.
 
-- Help to visualize data: Mostly, we have high dimensional dataset which is difficult to visualize. It helps in visualize dataset by reducing the number of features.
+- Help to visualize data: Mostly, we have a high dimensional dataset that is difficult to visualize. It helps visualize the dataset by reducing the number of features.
 
-- Multicollinearity: PCA solves one of the biggest problems - Multicollinearity. It removes highly correlated features by keeping most of information. To read more about this, Check out this [blog](https://thinkdatascience.github.io/posts/PCA/). 
+- Multicollinearity: PCA solves one of the biggest problems - Multicollinearity. It removes highly correlated features by keeping most of the information. To read more about this, Check out this [blog](https://thinkdatascience.github.io/posts/PCA/). 
 
-Now, Lets see what are the steps involved in this algorithm:
+Now, Let's see what are the steps involved in this algorithm:
 
 - Normalize or Scale your data. 
 
@@ -42,7 +42,7 @@ Now, Lets see what are the steps involved in this algorithm:
 
 ## Implementation
 
-We know the steps to implement an algorithm and its benefits. Lets see its implementation in Python.
+We know the steps to implement an algorithm and its benefits. Let's see its implementation in Python.
 
 
 ```python
