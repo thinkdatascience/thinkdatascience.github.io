@@ -8,11 +8,11 @@ math: true
 mermaid: true
 ---
 
-Interpreting machine learning model is one of the most important tasks in data science. 
-Consider a scenario where you might need to explain to your customer why the bank has rejected his/her loan application or another scenario where you want to explain your model's decisions in a humman-understandable way to your clients. While it is easy to interpret models such as linear regression or decision trees due it its inherent assumptions and simplicity. However, it is difficult to interpret complex "black blox" models such as Random Forests, XGBoost or Neural Neworks.
+Interpreting the machine learning model is one of the most important tasks in data science. 
+Consider a scenario where you might need to explain to your customer why the bank has rejected his/her loan application or another scenario where you want to explain your model's decisions in a human-understandable way to your clients. While it is easy to interpret models such as linear regression or decision trees due to their inherent assumptions and simplicity. However, it is difficult to interpret complex "black box" models such as Random Forests, XGBoost, or Neural Networks.
 
-In this article we'll explain how these black box models can be intrepreted. We'll use python library called SHAP(SHapley Additive exPlanations) for the same. 
-SHAP uses shapley values which are the measures of contributions each feature has in the machine learning model.
+In this article, we'll explain how these black-box models can be interpreted. We'll use a python library called SHAP(SHapley Additive exPlanations) for the same. 
+SHAP uses Shapley values which are the measures of contributions each feature has in the machine learning model.
 
 
 We start by importing the necessary libraries.
