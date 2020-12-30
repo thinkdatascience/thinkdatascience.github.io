@@ -11,11 +11,11 @@ mermaid: true
 
 ## R<sup>2</sup> and Adjusted R<sup>2</sup> 
 
-After fitting a regression model, you have to determine how well the model fits to the data. Is it good enough to generalize to unseen data? or Does it do a good job of explaining changes in the dependent variable?. In this post, we explore R-Squared and Adjusted R-Squared, its sigficance and limitations. 
+After fitting a regression model, you have to determine how well the model fits the data. Is it good enough to generalize to unseen data? or Does it do a good job of explaining changes in the dependent variable?. In this post, we explore R-Squared and Adjusted R-Squared, its significance, and limitations. 
 
 ![upload-image](/assets/img/sample/r2.jpeg)
 
-> R<sup>2</sup> is a goodness of fit measure. It tells us that how close the data are to the fitted line. 
+> R<sup>2</sup> is a goodness of fit measure. It tells us how close the data are to the fitted line. 
 
 R<sup>2</sup> is calculated as follows:
 
@@ -28,34 +28,34 @@ This gives us the percentage of the response variable variation that is explaine
 
 It is also known by other names such as Coefficient of Determination, or the coefficient of multiple determination for multiple regression.
 
-We can visualize the effect of R-Squared value. It represents how data points are scattered around the regression line.
+We can visualize the effect of the R-Squared value. It represents how data points are scattered around the regression line.
 
 ![upload-image](/assets/img/sample/Rsquared.png)
 
-Let's say, R-Squared value for the model on the left is between 15-20% and for the model on the right is 80%. This means that on the left 15%-20% of the variance explained by the model and the model explains 80% of the variance on the right. In general, We want our data points close to the regression line. However, in practice we don't get a model with 100% R-Squared value i.e all the data points fall exactly on the regression line.
+Let's say, R-Squared value for the model on the left is between 15-20% and for the model on the right is 80%. This means that on the left 15%-20% of the variance is explained by the model and the model explains 80% of the variance on the right. In general, We want our data points close to the regression line. However, in practice we don't get a model with 100% R-Squared value i.e all the data points fall exactly on the regression line.
 
 ## Limitations of R-Squared
 
-R-Squared value gives an estimate of the relationship between input features and the response feature. However it has some limitations.
+R-Squared value gives an estimate of the relationship between input features and the response feature. However, it has some limitations.
 
 - It doesn't inform whether a chosen model is good or bad.
 - Never tells that data and predictions are biased or not.
 
-A model can have a low or a high R-Squared value. And, it is not necessarily good or bad. A model with low R-Squared value can be a good model or a model with high R-Squared value can be a poor fitted model, and vice-versa. It is recommended to see residual plot or Adjusted R-Squared to interpret the linear model. 
+A model can have a low or a high R-Squared value. And, it is not necessarily good or bad. A model with a low R-Squared value can be a good model or a model with a high R-Squared value can be a poorly fitted model, and vice-versa. It is recommended to see a residual plot or Adjusted R-Squared to interpret the linear model. 
 
 ## Adjusted R-Squared
 
-> The adjusted R-squared lets us to compare the descriptive power of regression models that include multiple predictors in the model. 
+> The adjusted R-squared lets us compare the descriptive power of regression models that include multiple predictors in the model. 
 
-It solves the problem associated with R-Squared. Whenever we add a new predictor to a model, R-Squared value always increase irrespective of the fact that whether the added predictor is significant or not. So, it looks better for the fact that it has more variable but in reality it is not. It is necessary that it's value to be adjusted. Therefore, Adjusted R-Squared came to be better metric to evaluate a model. It only increases whenever a significant predictor is added to a model or, a given predictor improves the model more than what is predicted by chance otherwise it decreases. Whenever we have an overfitting situation, a high value of R-squared is obtained even though the model has less generalizability. 
+It solves the problem associated with R-Squared. Whenever we add a new predictor to a model, the R-Squared value always increases irrespective of the fact that whether the added predictor is significant or not. So, it looks better for the fact that it has more variables but in reality, it is not. It is necessary that it's value to be adjusted. Therefore, Adjusted R-Squared came to be a better metric to evaluate a model. It only increases whenever a significant predictor is added to a model or, a given predictor improves the model more than what is predicted by chance otherwise it decreases. Whenever we have an overfitting situation, a high value of R-squared is obtained even though the model has less generalizability. 
 
 ## Python Implementation
 
 Let's see an example of calculating R-Squared and Adjusted R-Squared.
 
-In python, `r2_score` metric is available in `sklearn.metrics` to calculate R-Squared value.
+In python, the `r2_score` metric is available in `sklearn.metrics` to calculate the R-Squared value.
 
-We start by importing the necesary packages:
+We start by importing the necessary packages:
 
 ```python
 import pandas as pd
@@ -64,7 +64,7 @@ from sklearn.linear_model import LinearRegression
 from sklearn.metrics import r2_score
 ```
 
-For this article, we chose the Boston House Prices data set, which is also available in sklearn package. More info [here]{https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html}. This dataset has 503 rows and 13 columns.
+For this article, we chose the Boston House Prices data set, which is also available in the sklearn package. More info [here]{https://scikit-learn.org/stable/modules/generated/sklearn.datasets.load_boston.html}. This dataset has 503 rows and 13 columns.
 
 ```python
 data  = pd.read_csv("boston.csv")
@@ -506,7 +506,7 @@ Adjusted R-Squared is not directly available in the package. We defined a custom
 def calculate_adj_r2(r2, n, p):    #adjusted r2
     return(1-(1-r2)*(n-1)/(n-p-1))
 ```
-Now, we are calculating the R-Squared and Adjusted R-Squared value.
+Now, we are calculating the R-Squared and Adjusted R-Squared values.
 
 ```python
 y_pred = linear_model_predictions(df_normalized)
