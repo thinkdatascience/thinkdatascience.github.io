@@ -391,7 +391,7 @@ plt.show()
 ```
 
 
-![png](output_19_0.png)
+![png](/assets/img/sample/output_19_0.png)
 
 
 From this histogram, we can see that if a customer is staying for a long period of time. He is continuing to stay with them. There are a lot of people who left in the first year of joining.
@@ -441,7 +441,7 @@ plt.show()
 ```
 
 
-![png](output_22_0.png)
+![png](/assets/img/sample/output_22_0.png)
 
 
 
@@ -489,7 +489,7 @@ plt.show()
 ```
 
 
-![png](output_24_0.png)
+![png](/assets/img/sample/output_24_0.png)
 
 
 
@@ -1804,7 +1804,7 @@ plt.ylabel('Truth')
 
 
 
-![png](output_53_1.png)
+![png](/assets/img/sample/output_53_1.png)
 
 
 
