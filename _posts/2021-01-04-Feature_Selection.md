@@ -339,12 +339,12 @@ df.shape
 
 Another common feature selection technique is finding the correlations between the feature in the dataset.
 
-The Pearson correlation coefficient \(\rho\) values range between -1 to 1. The values are interpreted as follows:
+The Pearson correlation coefficient \\(\rho\\) values range between -1 to 1. The values are interpreted as follows:
    * 1: There is a total positive correlation (if one feature goes up, the other also goes up)
    * -1: There is a total negative correlation (if one feature goes down, the other goes up)
    * 0: There is no correlation
 
-If we have a strong correlation between features ( \(\mid\rho\mid\) > 0.8), then we can keep of the features and drop the others.
+If we have a strong correlation between features ( \\(\mid\rho\mid\\) > 0.8), then we can keep of the features and drop the others.
 
 <b>NOTE: this statistic measures only the linear correlation between the features. Therefore, if the correlation is 0, it may also mean the there might exist a non-linear relationship between the variables.</b> 
 
