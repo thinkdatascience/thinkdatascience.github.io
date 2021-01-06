@@ -466,7 +466,7 @@ plt.show()
 
 
     
-![png](output_21_0.png)
+![correlation](/assets/img/sample/feat_imp.JPG)
     
 
 
@@ -993,7 +993,7 @@ plt.show()
 
 
     
-![png](output_45_0.png)
+![feat_imp]((/assets/img/sample/correlation_feat_sel.JPG))
     
 
 
