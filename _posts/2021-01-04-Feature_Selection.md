@@ -483,7 +483,7 @@ Now, we can keep one feature and drop the other feature.
 <b>NOTE: An important thing to note about correlation is that if there is a strong correlation between your independent features, then you must keep one of them and drop the rest as they generally "duplicate" information.
 However, if there is a strong correlation between your independent features and the dependent feature (or the target variable), then you must not drop the correlated feature as they will be an important predictor in your model. </b>
 
-> Mutual Information
+## Mutual Information
 
 This is a univariate feature selection technique to find correlated features. From the sklearn docs:
  
@@ -588,7 +588,7 @@ mutual_info_df
 
 As we can see we don't have any feature that is totally independent of the target variable.
 
-> Recursive Feature Elimination (RFE)
+## Recursive Feature Elimination (RFE)
 
 RFE is a greedy feature selection approach in which we first build a model with all the features and then recursively remove the least important feature at every iteration. But how does it tell which feature is least important ? For linear models like logistic regression or SVMs, the importance of the feature is decided by the coefficient of each feature whereas, in case of tree-based models like decision trees or random forest, feature importance is decided by the `feature_importances_` method of the model.
 
@@ -855,7 +855,7 @@ data_transformed.head()
 
 
 
-> Feature Importances with Tree-based methods
+## Feature Importances with Tree-based methods
 
 sklearn provides `feature_importances_` method with tree-based models like decision trees, random forests, etc.
 Let's see how we can get feature importance from a random forest model.
