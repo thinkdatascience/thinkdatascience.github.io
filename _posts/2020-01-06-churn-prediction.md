@@ -1,7 +1,7 @@
 ---
 title: Churn Prediction
 author: Akshay Adlakha & Akshaykumar Rao
-date: 2020-12-15 08:10:00 +0800
+date: 2020-01-06 08:10:00 +0800
 categories: [Blogging, Tutorial]
 tags: [writing]
 math: true
