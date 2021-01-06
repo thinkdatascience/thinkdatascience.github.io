@@ -2451,8 +2451,3 @@ print(classification_report(Y_test,y_pred_f))
 We can see that the F-1 score is not as good as it is for class 0. Focal Loss is not helping much in overcoming the imbalanced datasets. It works effectively in Object detection where we errorneously identity objects in emply spaces.  
 
 So, we can conclude that, SMOTE is very effective in handling imbalanced datasets as it generates synthetic data samples and prevents the problem of overfitting.
-
-
-```python
-
-```
