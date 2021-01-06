@@ -13,7 +13,7 @@ mermaid: true
 
 ![png](/assets/img/sample/churn.png)
 
-Customer churn, also known as customer attrition. It happens when customers stop doing business with a company for some reasons. So, The companies are now interested in finding these customers and look for the reasons why they are leaving. This could help in providing better services to the customera. Moreover, they know that the process of finding a new customer is more time consuming than retaining the one one.  
+Customer churn, also known as customer attrition. It happens when customers stop doing business with a company for some reasons. So, The companies are now interested in finding these customers and look for the reasons why they are leaving. This could help in providing better services to the customers. Moreover, they know that the process of finding a new customer is more time consuming than retaining the old one.  
 
 In this post, we will create a customer churn prediction model using Customer Churn dataset. We will implement an Artificial Neural Network (Tensorflow) to model churned customers, numpy and pandas for data crunching, and matplotlib for visualizations. Moreover, We will try different sampling methods such as Undersampling, Simple Oversampling, SMOTE (Synthetic Minority Oversampling Technique) and Focal Loss to overcome an issue of Imbalanced classes and compare the results. 
 
