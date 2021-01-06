@@ -11,7 +11,6 @@ mermaid: true
 
 ## Churn Prediction
 
-
 ![png](/assets/img/sample/churn.png)
 
 Customer churn, also known as customer attrition. It happens when customers stop doing business with a company for some reasons. So, The companies are now interested in finding these customers and look for the reasons why they are leaving. This could help in providing better services to the customera. Moreover, they know that the process of finding a new customer is more time consuming than retaining the one one.  
