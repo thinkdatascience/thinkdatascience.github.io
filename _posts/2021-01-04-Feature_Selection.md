@@ -13,7 +13,7 @@ mermaid: true
 In this, article we present few effective feature selection techniques.
 
 
-> Variance Threshold
+## Variance Threshold
 
 A feature with a very low variance implies that it is has values close to being constant. Such feature generally have no information that can help add any value to the model and thus, can be dropped from the data set. This can be done using `scikit-learn`'s `VarianceThreshold`.
 
@@ -50,6 +50,10 @@ df.head()
 
     .dataframe thead th {
         text-align: right;
+    }
+    .dataframe {
+    display: block;
+    overflow-x: auto;
     }
 </style>
 <table border="1" class="dataframe">
@@ -331,16 +335,16 @@ df.shape
 
 
 
-> Pearson Correlation
+## Pearson Correlation
 
 Another common feature selection technique is finding the correlations between the feature in the dataset.
 
-The Pearson correlation coefficient values range between -1 to 1. The values are interpreted as follows:
+The Pearson correlation coefficient \(\rho\) values range between -1 to 1. The values are interpreted as follows:
    * 1: There is a total positive correlation (if one feature goes up, the other also goes up)
    * -1: There is a total negative correlation (if one feature goes down, the other goes up)
    * 0: There is no correlation
 
-If we have a strong correlation between features (/rho > 0.8), then we can keep of the features and drop the others.
+If we have a strong correlation between features ( \(\mid\rho\mid\) > 0.8), then we can keep of the features and drop the others.
 
 <b>NOTE: this statistic measures only the linear correlation between the features. Therefore, if the correlation is 0, it may also mean the there might exist a non-linear relationship between the variables.</b> 
 
